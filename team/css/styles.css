@@ -147,16 +147,16 @@ header nav i img {
     }
     
     .gruopCards{
-        width: 85%;
+        width: 88%;
         display: flex;
         justify-content: center;
-        gap: 40px;
+        gap: 45px;
         flex-wrap: wrap;
     }
 
     .card {
         background: linear-gradient(180deg, #E3F3FB 0%, #E7F5FB 100%);
-        width: 250px;
+        width: 260px;
         height: 350px;
         border-radius: 7px;
         transition: 0.25s;
