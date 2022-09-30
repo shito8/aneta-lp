@@ -315,7 +315,7 @@ main {
 }
 
 .cardClient img{
-    width: calc(var(--hmain)*.45);
+    width: 78%;
 }
 
     /*  --- Background --- */
@@ -715,7 +715,6 @@ footer .rights{
 
     .cardSocial{
         width: calc(var(--hmain)*.37);
-    
     }
 
 
@@ -826,12 +825,10 @@ footer .rights{
     }
     
     .cardClient {
-        width: calc(var(--hmain)*.72);
-        height: calc(var(--hmain)*.93);
+        width: calc(var(--hmain)*.62);
+        height: calc(var(--hmain)*.75);
     }
-
-
-
+ 
     .groupSocial {
         gap: calc(var(--hmain)*.15);
     }
@@ -1011,10 +1008,6 @@ footer .rights{
         box-shadow: 0px 0px calc(var(--hmain)*.025) rgba(0, 0, 0, 0.25);
     }
 
-    .cardClient img{
-        width: calc(var(--hmain)*.32);
-    }
-
 
     .cardSocial {
         width: calc(var(--hmain)*.34);
@@ -1140,6 +1133,10 @@ footer .rights{
 
     .title h2, .clients h2, .social h2{
         font-size: calc(var(--titlesS));
+    }
+
+    .cardClient {
+        height: calc(var(--hmain)*.44);
     }
 
     .cardSocial {
