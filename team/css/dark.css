@@ -1,0 +1,65 @@
+.darkMode{
+    display: none;
+}
+
+body.dark .sunMode{
+    display: none;
+}
+
+body.dark .darkMode{
+    display: inline;
+}
+
+body.dark {
+    background: linear-gradient(359.35deg, #000000 -10.5%, rgba(0, 0, 0, 0) 67.33%), linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), linear-gradient(9.62deg, #339AD3 -0.79%, #BBA9E7 165.05%), linear-gradient(179.11deg, rgba(0, 0, 0, 0) 43.53%, #000000 100.41%), linear-gradient(77.15deg, rgba(51, 154, 211, 0.2) 53.02%, rgba(255, 215, 138, 0.2) 89.5%), linear-gradient(154.49deg, rgba(0, 0, 0, 0) 20.36%, #000000 106.02%), linear-gradient(9.62deg, #339AD3 -0.79%, #7F61B9 165.05%);
+    background-size: 100% 100%;
+}
+
+   /* --- Header scheme --- */
+
+body.dark .menu{
+    background: #2B4A5B;
+}
+
+body.dark .menu a{
+    color: #C2CAD1;
+}
+
+body.dark .menu hr{
+    border-bottom: #447890 2px solid;
+}
+
+   /* --- Cards scheme --- */
+
+body.dark main h1 {
+    color: #ffffff;
+    }
+
+body.dark .card {
+    background: #141B22;
+    color: #ffffff;
+}
+
+
+   /* --- Footer scheme --- */
+
+body.dark footer h4{
+    color: #ffffff;
+}
+
+body.dark footer p, body.dark footer li {
+    color: #C2CAD1;
+}
+
+body.darkMode footer i{
+    background-color: #ffffff;
+}
+
+/* --- Interactive --- */
+
+
+
+body.dark footer li:hover, body.dark .menu a:hover{
+    cursor: pointer;
+    color: #FFD78A;
+}

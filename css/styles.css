@@ -573,6 +573,26 @@ footer .rights{
 
 @media (min-width: 2000px) and (orientation: landscape){
 
+    .menu {
+        width: calc(var(--hmain)*.3);
+        border-radius: calc(var(--hmain)*.009);
+    }
+
+    .menu ul {
+        padding-top: calc(var(--hmain)*.017);
+    }
+    
+    .menu li {
+        font-size: calc(var(--hmain)*.022);
+        margin: calc(var(--hmain)*.017) 0;
+        padding-left: calc(var(--hmain)*.022);
+    }
+    
+    .menu hr{
+        width: calc(var(--hmain)*.044);
+        border-bottom: #E0AD00 calc(var(--hmain)*.003) solid;
+    }
+
     .articleLeft h2 {
         font-size: calc(var(--hmain)*.07);
         line-height: calc(var(--hmain)*.07);

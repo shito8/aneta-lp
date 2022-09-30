@@ -133,3 +133,10 @@ body.dark footer li:hover, body.dark .menu a:hover{
     color: #FFD78A;
 }
 
+
+@media (min-width: 2000px) and (orientation: landscape){
+    
+    body.dark .menu hr{
+        border-bottom: #447890 calc(var(--hmain)*.003) solid;
+    }
+}

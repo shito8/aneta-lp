@@ -1,0 +1,509 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+}
+
+:root{
+    font-family: 'Prompt', sans-serif;
+    --hmain: 100vh;
+    --pmain: 1.5rem;
+    --pmainS: 1.125rem;
+    --titleCard: 1.75rem;
+    --titleCardM: 1.5rem;
+    --titleCardS: 1.25rem;
+    --subtitleCard: 1.5rem;
+    --subtitleCardM: 1.25rem;
+    --subtitleCardS: 1.125rem;
+    --pcard: 1rem;
+    --pscard: 0.875rem;
+    --fooXL: 1.25rem;
+    --fooM: 1.125rem;
+    --pfoo: 1rem;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(181.25deg, rgba(255, 255, 255, 0) 41.55%, #FFFFFF 152.92%), linear-gradient(77.15deg, rgba(228, 244, 252, 0.2) 53.02%, rgba(255, 215, 138, 0.2) 89.5%), linear-gradient(154.49deg, rgba(255, 255, 255, 0) 20.36%, #FEFEFE 106.02%), linear-gradient(9.62deg, #9BD9F2 -0.79%, #BBA9E7 165.05%);
+    background-size: 100% 100%;
+}
+
+   /* --- Header scheme --- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 calc(var(--hmain)*.03);
+    height: calc(var(--hmain)*.1);
+}
+
+header img{
+    height: calc(var(--hmain)*.08);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.menu {
+    align-self: baseline;
+    background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
+    width: 220px;
+    position: absolute;
+    right: calc(var(--hmain)*.12);
+    top: calc(var(--hmain)*.03);
+    border-radius: calc(var(--pfoo)*.4);
+    transform: translateY(0px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.mActive {
+    opacity: 0;
+    transform: translateY(-500px);
+    transition-delay: 0.5s;
+}
+
+.menu ul {
+    padding-top: calc(var(--pfoo)*.75);
+}
+
+.menu li {
+    font-size: calc(var(--pfoo));
+    font-weight: 600;
+    margin: calc(var(--pfoo)*.75) 0;
+    padding-left: calc(var(--pfoo));
+}
+
+.menu hr{
+    border: none;
+    border-bottom: #E0AD00 2px solid;
+    width: calc(var(--pfoo)*2);
+}
+
+.menu a{
+    color: #000000;
+}
+
+.switch {
+    margin-left: calc(var(--hmain)*.015);
+}
+
+header nav i img {
+    height: calc(var(--hmain)*.03);
+    width: calc(var(--hmain)*.03);
+}
+
+   /* --- Cards scheme --- */
+
+   main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+
+    main h1 {
+        font-weight: 700;
+        font-size: calc(var(--pmain));
+        margin-bottom: calc(var(--pmain)*3);
+    }
+    
+    .gruopCards{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: linear-gradient(180deg, #E3F3FB 0%, #E7F5FB 100%);
+        width: 260px;
+        height: 350px;
+        border-radius: calc(var(--hmain)*.01);
+        transition: 0.25s;
+    }
+
+    .card .icon_card {
+        position: relative;
+    }
+
+    .card .icon_card a{
+        position: absolute;
+    }
+
+    .card .main_card {
+        padding: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card .icon_card img{
+        width: calc(var(--hmain)*.03);
+        border-radius: calc(var(--hmain)*.01) 0 0 0;
+    }
+
+    .card .img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card .img img {
+        width: 70%;
+    }
+
+    .main_card h4 {
+        font-weight: 500;
+        font-style: italic;
+        font-size: calc(var(--titleCardS));
+        margin-top: calc(var(--titleCardS));
+    }
+
+    .main_card h3{
+        font-weight: 600;
+        font-size: calc(var(--subtitleCardS));
+        margin: calc(var(--titleCardS)*.5) 0;
+    }
+
+    .main_card .description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: calc(var(--titleCardS)*.5);
+    }
+
+    .main_card .description p{
+        font-weight: 400;
+        text-align: center;
+        line-height: calc(var(--pcard)*1.5);
+    }
+
+    /* --- Footer scheme --- */
+
+    footer {
+        display: flex;
+        margin-top: calc(var(--hmain)*0.1);
+        padding: calc(var(--hmain)*.032) calc(var(--hmain)*.032);
+    }
+    
+    footer .foot{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+    }
+    
+    
+    footer article {
+        width: 30%;
+        height: 100%;
+    }
+    
+    .logoFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logoFooter img{
+        height: calc(var(--hmain)*.08);
+    
+    }
+    
+    .logoFooter p, .rights p {
+        
+        font-size: calc(var(--pfoo));
+        font-weight: 500;
+        margin-top: calc(var(--pfoo)*.5);
+    }
+    
+    footer nav {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    footer h4 {
+        font-weight: 700;
+        font-size: calc(var(--fooXL));
+        margin-bottom: calc(var(--fooXL));
+        color: #000000;
+    }
+    
+    footer li {
+        font-size: calc(var(--fooXL));
+        font-weight: 600;
+        margin-bottom: calc(var(--fooXL));
+        color: #000000;
+        transition: 0.15s;
+    }
+    
+    footer section {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .icons{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: calc(var(--pfoo)*2);
+    }
+    
+    .icons {
+        gap:calc(var(--hmain)*.03)
+    }
+    
+    .icons i{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .icons img {
+        height: calc(var(--hmain)*.03);
+        width: calc(var(--hmain)*.03);
+    }
+    
+    footer i{
+        transition: 0.15s;
+    }
+    
+    footer .rights{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: calc(var(--pfoo)*.5);
+    }
+
+
+        /* --- Interactive --- */
+
+        .switch:hover, #menu{
+            cursor: pointer;
+        }    
+
+        .card:hover{
+            scale: 1.1;
+        }      
+    
+        footer li:hover, .menu a:hover{
+            cursor: pointer;
+            color: #074A6F;
+        }
+        
+        footer i:hover{
+            cursor: pointer;
+            scale: 1.1;
+        }        
+
+/* --- Medias Queries--- */
+
+
+/* 2 */
+
+@media (max-width: 1367px) and (orientation: landscape){
+
+
+    footer {
+        flex-direction: column;
+    }
+    footer section .rights{
+        align-items: flex-start;
+    }
+
+    footer .icons{
+        justify-content: flex-start;
+    }
+
+    footer h4 {
+        font-size: calc(var(--fooM));
+        margin-bottom: calc(var(--fooM));
+    }
+    
+    footer li {
+        font-size: calc(var(--pfoo));
+        margin-bottom: calc(var(--pfoo));
+    }
+
+}
+
+/* 4 Mobile Landscape */
+
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+    footer {
+        flex-direction: column;
+        padding: 0% calc(var(--hmain)*.03);
+        align-items: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        padding-top: calc(var(--pfoo)*1.5);
+    }
+
+
+    footer article {
+        width: 100%;
+    }
+
+    .logoFooter{
+        
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .logoFooter p {
+        padding: 0 15%;
+        text-align: center;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: calc(var(--fooM));
+
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: calc(var(--fooM)) 0;
+    }
+    footer section {
+        width: 100%;
+        padding-left: calc(var(--hmain)*.027);
+        padding: 0px calc(var(--hmain)*.014);
+        padding-bottom: calc(var(--fooM));
+    }
+
+    footer h4 {
+        font-size: calc(var(--fooM));
+        margin-bottom: calc(var(--fooM));
+    }
+    
+    footer li {
+        font-size: calc(var(--pfoo));
+        margin-bottom: calc(var(--pfoo));
+    }
+
+    .icons{
+        gap: calc(var(--hmain)*.055);
+    }
+    .icons img {
+        height: calc(var(--hmain)*.055);
+        width: calc(var(--hmain)*.055);
+    }
+
+    footer .rights p{
+        align-self: center;
+    }
+
+    footer .icons{
+        justify-content: center;
+    }
+
+}
+
+/* 5  */
+
+@media (max-width: 1044px) and (orientation: portrait) {
+
+    header {
+        margin: 0 calc(var(--hmain)*.03);
+        margin-bottom: calc(var(--pmain)*3);
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0% calc(var(--hmain)*.03);
+        align-items: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        padding-top: calc(var(--pfoo)*1.5);
+    }
+
+
+    footer article {
+        width: 100%;
+    }
+
+    .logoFooter{
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoFooter p{
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: calc(var(--fooM));
+
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: calc(var(--fooM)) 0;
+    }
+    footer section {
+        width: 100%;
+        padding-left: calc(var(--hmain)*.027);
+        padding: 0px calc(var(--hmain)*.014);
+        padding-bottom: calc(var(--fooM));
+    }
+
+    footer .rights{
+        align-items: center;
+    }
+    footer .icons{
+        justify-content: center;
+        margin-top: 0;
+    }
+
+
+    footer h4 {
+        font-size: calc(var(--fooM));
+        margin-bottom: calc(var(--fooM));
+    }
+    
+    footer li {
+        font-size: calc(var(--pfoo));
+        margin-bottom: calc(var(--pfoo));
+    }
+
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+
+    .menu {
+        width: 190px;
+    }
+
+}
