@@ -51,6 +51,38 @@ header nav {
     height: 100%;
 }
 
+/*  --- Background --- */
+
+.background {
+    position: relative;
+    z-index: -2;
+}
+
+.background div {
+    position: absolute;
+    right: -10px;
+    top: -60px;
+}
+
+.background div img {
+    height: calc(var(--hmain)*.4);
+}
+
+.cardano div {
+    top: calc(var(--hmain)*.05);
+    left: 0;
+}
+
+.cardano div img {
+    height: calc(var(--hmain)*.75);
+}
+
+.footer div {
+    top: -100px;
+    left: 0;
+}
+
+/*  --- Fin Background --- */
 .menu {
     align-self: baseline;
     background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
@@ -115,18 +147,18 @@ header nav i img {
     }
     
     .gruopCards{
-        width: 90%;
+        width: 85%;
         display: flex;
         justify-content: center;
-        gap: 60px;
+        gap: 40px;
         flex-wrap: wrap;
     }
 
     .card {
         background: linear-gradient(180deg, #E3F3FB 0%, #E7F5FB 100%);
-        width: 260px;
+        width: 250px;
         height: 350px;
-        border-radius: calc(var(--hmain)*.01);
+        border-radius: 7px;
         transition: 0.25s;
     }
 
@@ -145,8 +177,8 @@ header nav i img {
         align-items: center;
     }
     .card .icon_card img{
-        width: calc(var(--hmain)*.03);
-        border-radius: calc(var(--hmain)*.01) 0 0 0;
+        width: 25px;
+        border-radius: 7px 0 0 0;
     }
 
     .card .img{
@@ -309,6 +341,103 @@ header nav i img {
 
 /* --- Medias Queries--- */
 
+@media (min-width: 1500px) and (orientation: landscape){
+
+    .menu {
+        width: calc(var(--hmain)*.3);
+        border-radius: calc(var(--hmain)*.009);
+    }
+
+    .menu ul {
+        padding-top: calc(var(--hmain)*.017);
+    }
+    
+    .menu li {
+        font-size: calc(var(--hmain)*.022);
+        margin: calc(var(--hmain)*.017) 0;
+        padding-left: calc(var(--hmain)*.022);
+    }
+    
+    .menu hr{
+        width: calc(var(--hmain)*.044);
+        border-bottom: #E0AD00 calc(var(--hmain)*.003) solid;
+    }
+
+
+main h1 {
+    font-size: calc(var(--hmain)*.033);
+    margin-bottom: calc(var(--hmain)*.1);
+}
+
+.gruopCards{
+    gap: calc(var(--hmain)*.05);
+}
+
+.card {
+    width: calc(var(--hmain)*.34);
+    height: auto;
+    border-radius: calc(var(--hmain)*.01);
+}
+
+.card .icon_card img{
+    width: calc(var(--hmain)*.03);
+    border-radius: calc(var(--hmain)*.01) 0 0 0;
+}
+
+.card .main_card {
+    padding: 5% 10% 5% 10%;
+}
+
+.main_card h4 {
+    font-size: calc(var(--hmain)*.028);
+    margin-top: calc(var(--hmain)*.028);
+}
+
+.main_card h3{
+    font-size: calc(var(--hmain)*.023);
+    margin: calc(var(--hmain)*.014) 0;
+}
+
+.main_card .description {
+    margin-top: calc(var(--hmain)*.014);
+}
+
+.main_card .description p{
+    line-height: calc(var(--hmain)*.022);
+    font-size: calc(var(--hmain)*.022);
+}
+/*  --- inicio Background --- */
+.footer div {
+    top: -200px;
+}
+
+/*  --- Fin Background --- */
+    .logoFooter img{
+        height: calc(var(--hmain)*.05);
+        width: calc(var(--hmain)*.19);
+    }
+    
+    .logoFooter p, .rights p {
+        
+        font-size: calc(var(--hmain)*.02);
+        margin-top: calc(var(--hmain)*.01);
+    }
+
+    footer h4 {
+        font-size: calc(var(--hmain)*.022);
+        margin-bottom: calc(var(--hmain)*.022);
+    }
+    
+    footer li {
+        font-size: calc(var(--hmain)*.022);
+        margin-bottom: calc(var(--hmain)*.022);
+    }
+
+    footer .rights{
+        margin-top: calc(var(--hmain)*.025);
+    }
+
+}
 
 /* 2 */
 
@@ -338,9 +467,23 @@ header nav i img {
 
 }
 
+/* 3  */
+
+@media (max-width: 1023px) and (orientation: landscape){
+
+    .background {
+        display: none;
+    }
+}
+
 /* 4 Mobile Landscape */
 
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+    
+    .background {
+        display: none;
+    }
+    
     footer {
         flex-direction: column;
         padding: 0% calc(var(--hmain)*.03);
@@ -423,6 +566,10 @@ header nav i img {
 /* 5  */
 
 @media (max-width: 1044px) and (orientation: portrait) {
+
+    .background {
+        display: none;
+    }
 
     header {
         margin: 0 calc(var(--hmain)*.03);
