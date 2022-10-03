@@ -48,11 +48,11 @@ header img{
     height: calc(var(--hmain)*.08);
 }
 
-header nav {
+header section.navi {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 100%;
+    height: 100%;  
 }
 
 .menu {
@@ -99,7 +99,7 @@ header nav {
     margin-left: calc(var(--hmain)*.015);
 }
 
-header nav i img {
+header section.navi i img {
     height: calc(var(--hmain)*.03);
     width: calc(var(--hmain)*.03);
 }
@@ -275,7 +275,7 @@ main {
     /* --- Third scheme --- */
 
 .clients{
-    padding: 0 calc(var(--hmain)*.05);
+    /*padding: 0 0;*/
 }
 
 .clients div {
@@ -293,15 +293,16 @@ main {
 
 .groupClients{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: calc(var(--hmain)*.075);
+    width: 100%;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;
+    align-items: center;*/
+    /*gap: calc(var(--hmain)*.075);*/
     margin-bottom: calc(var(--hmain)*.15);
-    padding: 0% 5%;
+    /*padding: 0% 5%;*/
 }
 
-.cardClient {
+/*.cardClient {
     display: flex;
     flex-direction: column;
     border-radius: calc(var(--hmain)*.04);
@@ -312,9 +313,42 @@ main {
     box-shadow: 0px 0px calc(var(--hmain)*.05) rgba(0, 0, 0, 0.25);
     transition: 0.25s;
     background: #FFFFFF;
+    user-select: none;
+}*/
+.carousel {
+    min-height: calc(var(--hmain)*.69);
 }
 
-.cardClient img{
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: calc(var(--hmain)*.04);
+    justify-content: center;
+    align-items:center;
+    width: calc(var(--hmain)*.46);
+    height: calc(var(--hmain)*.56);
+    box-shadow: 0px 0px calc(var(--hmain)*.05) rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    user-select: none;
+}
+
+.carousel .indicators .indicator-item{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.carousel .indicators .indicator-item.active{
+    background-color: #141B22;
+}
+.carousel .indicators{
+    bottom: -15px;
+}
+
+
+/*.cardClient img{
+    width: 78%;
+}*/
+
+.carousel .carousel-item img{
     width: 78%;
 }
 
@@ -454,7 +488,7 @@ footer article {
     margin-top: calc(var(--pfoo)*.5);
 }
 
-footer nav {
+footer div.navi{
     width: 70%;
     height: 100%;
     display: flex;
@@ -881,7 +915,7 @@ footer .rights{
         text-align: center;
     }
 
-    footer nav {
+    footer div.navi {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -1058,7 +1092,7 @@ footer .rights{
         padding: 0 5%;
     }
 
-    footer nav {
+    footer div.navi {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;

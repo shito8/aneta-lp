@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/materialize.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/dark.css">
@@ -20,7 +21,7 @@
         <header>
             <img src="./img/aneta_logo_light.png" alt="logo" class="sunMode">
             <img src="./img/aneta_logo_dark.png" alt="logo" class="darkMode">
-            <nav>
+            <section class="navi">
                 <div class="menu mActive">
                     <ul>
                         <li><a href="https://medium.com/@anetaBTC/liso-part-iii-stability-1bf017c6e816" target="_blank">LISO</a></li><hr>
@@ -39,7 +40,7 @@
                 <i><img src="./img/moon_theme.png" alt="sun" class="sunMode"></i>
                 <i><img src="./img/sun_theme.png" alt="moon" class="darkMode"></i>
                 </div>
-            </nav>
+            </section>
         </header>
 
         <main>
@@ -104,25 +105,25 @@
             <p>Learn more about our partners who are contributing to decentralization.</p>
         </div>
 
-        <article class="groupClients">
+        <article class="groupClients carousel">
 
-            <a class="cardClient" href="https://spectrum.fi/" target="_blank">
+            <a class="cardClient carousel-item" href="https://spectrum.fi/" target="_blank">
                 <img src="./img/spectrum_light.png" alt="spectrum_logo" class="sunMode">
                 <img src="./img/spectrum_dark.png" alt="spectrum_logo" class="darkMode">
             </a>
-            <a class="cardClient" href="https://kyberswap.com/" target="_blank">
+            <a class="cardClient carousel-item" href="https://kyberswap.com/" target="_blank">
                 <img src="./img/kyberswap_lihgt.png" alt="kyberswap_logo" class="sunMode">
                 <img src="./img/kyberswap_dark.png" alt="kyberswap_logo" class="darkMode">
             </a>
-            <a class="cardClient" href="https://minswap.org/" target="_blank">
+            <a class="cardClient carousel-item" href="https://minswap.org/" target="_blank">
                 <img src="./img/minswap_light.png" alt="minswap_logo" class="sunMode">
                 <img src="./img/minswap_dark.png" alt="minswap_logo" class="darkMode">
             </a>
-            <a class="cardClient" href="https://www.ergopad.io/" target="_blank">
+            <a class="cardClient carousel-item" href="https://www.ergopad.io/" target="_blank">
                 <img src="./img/ergopad_light.png" alt="ergopad_logo" class="sunMode">
                 <img src="./img/ergopad_dark.png" alt="ergopad_logo" class="darkMode">
             </a>
-            <a class="cardClient" href="https://www.getblok.io/" target="_blank">
+            <a class="cardClient carousel-item" href="https://www.getblok.io/" target="_blank">
                 <img src="./img/getblok_light.png" alt="getblok_logo" class="sunMode">
                 <img src="./img/getblok_dark.png" alt="getblok_logo" class="darkMode">
             </a>
@@ -184,7 +185,7 @@
                 <p>anetaBTC is a decentralized, secure protocol that allows users to unlck the value on thier Bitcoin on Ergo and Cardano.</p>
             </article>
 
-            <nav>
+            <div class="navi">
                 
                 <ul>
                     <h4>anetaBTC</h4>
@@ -205,7 +206,7 @@
                     <a href="#" target="_blank"><li>Hiring</li></a>
                     <a href="mailto:info@anetabtc.io"><li>Contact</li></a>
                 </ul>
-            </nav>
+            </div>
         </div>
 
         <section>
@@ -241,7 +242,7 @@
 
     </footer>
 
-
+    <script src="./js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

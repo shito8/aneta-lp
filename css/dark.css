@@ -61,7 +61,6 @@ body.dark .title h2, body.dark .social h2, body.dark .clients h2 {
 
 body.dark .title p, body.dark .clients p, body.dark .social p {
     color: #787D80;
-
 }
 
 
@@ -80,7 +79,14 @@ body.dark .card p {
 
 body.dark .cardClient {
     background: #141B22;
+}
 
+body.dark .carousel .indicators .indicator-item{
+    background: #787D80;
+}
+
+body.dark .carousel .indicators .indicator-item.active{
+    background-color: #ffffff;
 }
 
 body.dark .cardSocial{
