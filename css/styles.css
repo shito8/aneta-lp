@@ -45,7 +45,7 @@ header {
 }
 
 header img{
-    height: calc(var(--hmain)*.045);
+    height: calc(var(--hmain)*.04);
 }
 
 header nav {
@@ -107,6 +107,11 @@ header nav i img {
 header nav .switch i img {
     height: calc(var(--hmain)*.04);
     width: calc(var(--hmain)*.04);
+}
+
+header nav .switch i:first-child img{
+    height: calc(var(--hmain)*.032);
+    width: calc(var(--hmain)*.032);
 }
 
 main {
@@ -191,7 +196,7 @@ main {
 .articleRight img {
     width: calc(var(--hmain)*.5);
     height: calc(var(--hmain)*.5);
-    margin: calc(var(--hmain)*.12) 0%;
+    margin: calc(var(--hmain)*.157) 0%;
 }
 
 /* --- second scheme --- */
@@ -449,7 +454,7 @@ footer article {
 }
 
 .logoFooter img{
-    height: calc(var(--hmain)*.045);
+    height: calc(var(--hmain)*.04);
 
 }
 
@@ -794,19 +799,39 @@ footer .rights{
         display: inline-block;
     }
 
+    header {
+        margin: 0 calc(var(--hmain)*.1);
+        height: calc(var(--hmain)*.15);
+    }
+
     header img{
-        height: calc(var(--hmain)*.055);
+        height: calc(var(--hmain)*.06);
     }
 
     header nav div i{
        display: flex;
     }
 
+    header nav i img {
+        height: calc(var(--hmain)*.05);
+        width: calc(var(--hmain)*.05);
+    }
+    
     header nav .switch i img {
-        height: calc(var(--hmain)*.045);
-        width: calc(var(--hmain)*.045);
+        height: calc(var(--hmain)*.06);
+        width: calc(var(--hmain)*.06);
+    }
+    
+    header nav .switch i:first-child img{
+        height: calc(var(--hmain)*.052);
+        width: calc(var(--hmain)*.052);
     }
 
+    .menu {
+        right: calc(var(--hmain)*.23);
+        top: calc(var(--hmain)*.05);
+    }
+    
     .articleLeft {
         width: 60%;
     }
@@ -814,10 +839,13 @@ footer .rights{
     .articleLeft h2 {
         font-size: calc(var(--tmainS));
         line-height: calc(var(--tmainS)*1.2);
+        padding: 0 0px;
+        padding-bottom: calc(var(--tmainS)*.3);
     }
 
     .articleLeft h1 {
         font-size: calc(var(--pmainS));
+        margin-bottom: calc(var(--pmainS)*.5);
     }
 
     .articleLeft .buttons {
@@ -915,7 +943,7 @@ footer .rights{
     }
 
     .logoFooter img {
-        height: calc(var(--hmain)*.08); 
+        height: calc(var(--hmain)*.1); 
     }
 
     .logoFooter p {
@@ -1099,6 +1127,10 @@ footer .rights{
         align-items: center;
     }
 
+    .logoFooter img {
+        height: calc(var(--hmain)*.03); 
+    }
+
     .logoFooter p{
         text-align: center;
         padding: 0 5%;
@@ -1192,6 +1224,10 @@ footer .rights{
 
     .cardSocial h3{
         margin: 40px 0;
+    }
+
+    .logoFooter img {
+        height: calc(var(--hmain)*.04); 
     }
 
 }

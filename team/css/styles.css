@@ -41,7 +41,7 @@ header {
 }
 
 header img{
-    height: calc(var(--hmain)*.045);
+    height: calc(var(--hmain)*.04);
 }
 
 header nav {
@@ -54,6 +54,11 @@ header nav {
 header nav .switch i img {
     height: calc(var(--hmain)*.04);
     width: calc(var(--hmain)*.04);
+}
+
+header nav .switch i:first-child img{
+    height: calc(var(--hmain)*.032);
+    width: calc(var(--hmain)*.032);
 }
 
 /*  --- Background --- */
@@ -249,7 +254,7 @@ header nav i img {
     }
     
     .logoFooter img{
-        height: calc(var(--hmain)*.045);
+        height: calc(var(--hmain)*.04);
     }
     
     .logoFooter p, .rights p {
@@ -488,18 +493,38 @@ main h1 {
         display: none;
     }
     
+    header {
+        margin: 0 calc(var(--hmain)*.1);
+        height: calc(var(--hmain)*.15);
+    }
+
     header img{
-        height: calc(var(--hmain)*.055);
+        height: calc(var(--hmain)*.06);
     }
 
     header nav div i{
         display: flex;
      }
  
-     header nav .switch i img {
-         height: calc(var(--hmain)*.045);
-         width: calc(var(--hmain)*.045);
-     }
+     header nav i img {
+        height: calc(var(--hmain)*.05);
+        width: calc(var(--hmain)*.05);
+    }
+    
+    header nav .switch i img {
+        height: calc(var(--hmain)*.06);
+        width: calc(var(--hmain)*.06);
+    }
+    
+    header nav .switch i:first-child img{
+        height: calc(var(--hmain)*.052);
+        width: calc(var(--hmain)*.052);
+    }
+
+    .menu {
+        right: calc(var(--hmain)*.23);
+        top: calc(var(--hmain)*.05);
+    }
 
     footer {
         flex-direction: column;
@@ -525,7 +550,7 @@ main h1 {
     }
 
     .logoFooter img {
-        height: calc(var(--hmain)*.08); 
+        height: calc(var(--hmain)*.1); 
     }
     .logoFooter p {
         padding: 0 15%;
@@ -621,6 +646,10 @@ main h1 {
         align-items: center;
     }
 
+    .logoFooter img {
+        height: calc(var(--hmain)*.03); 
+    }
+
     .logoFooter p{
         text-align: center;
         padding: 0 5%;
@@ -674,6 +703,10 @@ main h1 {
 
     .menu {
         width: 190px;
+    }
+
+    .logoFooter img {
+        height: calc(var(--hmain)*.04); 
     }
 
 }
