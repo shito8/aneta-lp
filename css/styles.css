@@ -40,12 +40,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 calc(var(--hmain)*.03);
+    margin: 0 calc(var(--hmain)*.05);
     height: calc(var(--hmain)*.1);
 }
 
 header img{
-    height: calc(var(--hmain)*.08);
+    height: calc(var(--hmain)*.045);
 }
 
 header nav {
@@ -60,7 +60,7 @@ header nav {
     background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
     width: 220px;
     position: absolute;
-    right: calc(var(--hmain)*.12);
+    right: calc(var(--hmain)*.14);
     top: calc(var(--hmain)*.03);
     border-radius: calc(var(--pfoo)*.4);
     transform: translateY(0px);
@@ -102,6 +102,11 @@ header nav {
 header nav i img {
     height: calc(var(--hmain)*.03);
     width: calc(var(--hmain)*.03);
+}
+
+header nav .switch i img {
+    height: calc(var(--hmain)*.04);
+    width: calc(var(--hmain)*.04);
 }
 
 main {
@@ -184,9 +189,9 @@ main {
 }
 
 .articleRight img {
-    width: calc(var(--hmain)*.58);
-    height: calc(var(--hmain)*.58);
-    margin: calc(var(--hmain)*.1) 0%;
+    width: calc(var(--hmain)*.5);
+    height: calc(var(--hmain)*.5);
+    margin: calc(var(--hmain)*.12) 0%;
 }
 
 /* --- second scheme --- */
@@ -322,7 +327,7 @@ main {
 
 .background {
     position: relative;
-    z-index: -2;
+    z-index: -1;
 }
 
 .background div {
@@ -365,7 +370,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: calc(var(--hmain)*.063);
+    gap: calc(var(--hmain)*.06);
 }
 
 .cardSocial {
@@ -379,6 +384,7 @@ main {
     flex-direction: column;
     transition: 0.25s;
     padding: 0% 2%;
+    background-color: #ffffff;
 }
 
 .cardSocial img {
@@ -443,7 +449,7 @@ footer article {
 }
 
 .logoFooter img{
-    height: calc(var(--hmain)*.08);
+    height: calc(var(--hmain)*.045);
 
 }
 
@@ -712,10 +718,22 @@ footer .rights{
 /* 2 */
 
 @media (max-width: 1367px) and (orientation: landscape){
-
-    .cardSocial{
-        width: calc(var(--hmain)*.37);
+    
+    .social{
+        margin: 5% 5%;
     }
+    
+    .cardSocial{
+        width: 260px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+.cardSocial img {
+    width: calc(var(--hmain)*.085);
+    height: calc(var(--hmain)*.085);
+    border-radius: 15%;
+}
 
 
     footer {
@@ -741,8 +759,16 @@ footer .rights{
 
 }
 
-/* 3  */
+/* 3 Tablet Landscape */
 
+@media (max-width: 1140px) and (orientation: landscape){
+
+.social{
+    margin: 5% 15%;
+}
+}
+
+/* 3  */
 @media (max-width: 1023px) and (orientation: landscape){
 
     .background {
@@ -766,6 +792,19 @@ footer .rights{
 
     .hidden {
         display: inline-block;
+    }
+
+    header img{
+        height: calc(var(--hmain)*.055);
+    }
+
+    header nav div i{
+       display: flex;
+    }
+
+    header nav .switch i img {
+        height: calc(var(--hmain)*.045);
+        width: calc(var(--hmain)*.045);
     }
 
     .articleLeft {
@@ -873,7 +912,10 @@ footer .rights{
         
         justify-content: center;
         align-items: center;
-    
+    }
+
+    .logoFooter img {
+        height: calc(var(--hmain)*.08); 
     }
 
     .logoFooter p {
@@ -943,9 +985,13 @@ footer .rights{
     header {
         margin: 0 calc(var(--hmain)*.03);
     }
-
+ 
     .hidden {
         display: none;
+    }
+
+    .menu {
+        right: calc(var(--hmain)*.12);
     }
 
     .articleLeft {

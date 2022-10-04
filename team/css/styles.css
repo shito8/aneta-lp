@@ -36,12 +36,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 calc(var(--hmain)*.03);
+    margin: 0 calc(var(--hmain)*.05);
     height: calc(var(--hmain)*.1);
 }
 
 header img{
-    height: calc(var(--hmain)*.08);
+    height: calc(var(--hmain)*.045);
 }
 
 header nav {
@@ -49,6 +49,11 @@ header nav {
     align-items: center;
     justify-content: flex-end;
     height: 100%;
+}
+
+header nav .switch i img {
+    height: calc(var(--hmain)*.04);
+    width: calc(var(--hmain)*.04);
 }
 
 /*  --- Background --- */
@@ -88,7 +93,7 @@ header nav {
     background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
     width: 220px;
     position: absolute;
-    right: calc(var(--hmain)*.12);
+    right: calc(var(--hmain)*.14);
     top: calc(var(--hmain)*.03);
     border-radius: calc(var(--pfoo)*.4);
     transform: translateY(0px);
@@ -244,8 +249,7 @@ header nav i img {
     }
     
     .logoFooter img{
-        height: calc(var(--hmain)*.08);
-    
+        height: calc(var(--hmain)*.045);
     }
     
     .logoFooter p, .rights p {
@@ -413,8 +417,8 @@ main h1 {
 
 /*  --- Fin Background --- */
     .logoFooter img{
-        height: calc(var(--hmain)*.05);
-        width: calc(var(--hmain)*.19);
+        height: calc(var(--hmain)*.045);
+
     }
     
     .logoFooter p, .rights p {
@@ -484,6 +488,19 @@ main h1 {
         display: none;
     }
     
+    header img{
+        height: calc(var(--hmain)*.055);
+    }
+
+    header nav div i{
+        display: flex;
+     }
+ 
+     header nav .switch i img {
+         height: calc(var(--hmain)*.045);
+         width: calc(var(--hmain)*.045);
+     }
+
     footer {
         flex-direction: column;
         padding: 0% calc(var(--hmain)*.03);
@@ -507,6 +524,9 @@ main h1 {
     
     }
 
+    .logoFooter img {
+        height: calc(var(--hmain)*.08); 
+    }
     .logoFooter p {
         padding: 0 15%;
         text-align: center;
@@ -576,6 +596,9 @@ main h1 {
         margin-bottom: calc(var(--pmain)*3);
     }
 
+    .menu {
+        right: calc(var(--hmain)*.12);
+    }
     footer {
         flex-direction: column;
         padding: 0% calc(var(--hmain)*.03);
