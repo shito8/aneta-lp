@@ -532,6 +532,11 @@ header nav i img {
         top: calc(var(--hmain)*.05);
     }
 
+    .card {
+        width: 260px;
+    }
+
+
     footer {
         flex-direction: column;
         padding: 0% calc(var(--hmain)*.03);
@@ -630,6 +635,11 @@ header nav i img {
     .menu {
         right: calc(var(--hmain)*.12);
     }
+
+    .card {
+        width: 260px;
+    }
+    
     footer {
         flex-direction: column;
         padding: 0% calc(var(--hmain)*.03);
