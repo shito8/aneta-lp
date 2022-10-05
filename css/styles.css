@@ -112,6 +112,7 @@ header nav .switch i img {
 header nav .switch i:first-child img{
     height: calc(var(--hmain)*.032);
     width: calc(var(--hmain)*.032);
+    margin: calc(var(--hmain)*.004) calc(var(--hmain)*.004);
 }
 
 main {
@@ -827,6 +828,7 @@ footer .rights{
     header nav .switch i:first-child img{
         height: calc(var(--hmain)*.052);
         width: calc(var(--hmain)*.052);
+        margin: calc(var(--hmain)*.004) calc(var(--hmain)*.004);
     }
 
     .menu {
