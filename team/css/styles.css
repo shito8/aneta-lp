@@ -157,7 +157,7 @@ header nav i img {
     }
     
     .gruopCards{
-        width: 88%;
+        width: 87%;
         display: flex;
         justify-content: center;
         gap: 45px;
@@ -373,59 +373,56 @@ header nav i img {
     }
 
 
-main h1 {
-    font-size: calc(var(--hmain)*.033);
-    margin-bottom: calc(var(--hmain)*.1);
-}
-
-.gruopCards{
-    gap: calc(var(--hmain)*.05);
-}
-
-.card {
-    width: calc(var(--hmain)*.34);
-    height: auto;
-    border-radius: calc(var(--hmain)*.01);
-}
-
-.card .icon_card img{
-    width: calc(var(--hmain)*.03);
-    border-radius: calc(var(--hmain)*.01) 0 0 0;
-}
-
-.card .main_card {
-    padding: 5% 10% 5% 10%;
-}
-
-.main_card h4 {
-    font-size: calc(var(--hmain)*.028);
-    margin-top: calc(var(--hmain)*.028);
-}
-
-.main_card h3{
-    font-size: calc(var(--hmain)*.023);
-    margin: calc(var(--hmain)*.014) 0;
-}
-
-.main_card .description {
-    margin-top: calc(var(--hmain)*.014);
-}
-
-.main_card .description p{
-    line-height: calc(var(--hmain)*.022);
-    font-size: calc(var(--hmain)*.022);
-}
-/*  --- inicio Background --- */
-.footer div {
-    top: -200px;
-}
-
-/*  --- Fin Background --- */
-    .logoFooter img{
-        height: calc(var(--hmain)*.045);
-
+    main h1 {
+        font-size: calc(var(--hmain)*.033);
+        margin-bottom: calc(var(--hmain)*.1);
     }
-    
+
+    .gruopCards{
+        width: 78%;
+        gap: calc(var(--hmain)*.05);
+    }
+
+    .card {
+        width: calc(var(--hmain)*.27); /*.34*/
+        height: auto;
+        border-radius: calc(var(--hmain)*.008); /*.01*/
+    }
+
+    .card .icon_card img{
+        width: calc(var(--hmain)*.024); /*.03*/
+        border-radius: calc(var(--hmain)*.008) 0 0 0; /*.01*/
+    }
+
+    .card .main_card {
+        padding: 5% 10% 5% 10%;
+    }
+
+    .main_card h4 {
+        font-size: calc(var(--hmain)*.022); /*.028*/
+        margin-top: calc(var(--hmain)*.022); /*.028*/
+    }
+
+    .main_card h3{
+        font-size: calc(var(--hmain)*.018); /*.023*/
+        margin: calc(var(--hmain)*.012) 0; /*.014*/
+    }
+
+    .main_card .description {
+        margin-top: calc(var(--hmain)*.012); /*.014*/
+    }
+
+    .main_card .description p{
+        line-height: calc(var(--hmain)*.018); /*.022*/
+        font-size: calc(var(--hmain)*.018); /*.022*/
+    }
+    /*  --- inicio Background --- */
+    .footer div {
+        top: -200px;
+    }
+
+    /*  --- Fin Background --- */
+   
     .logoFooter p, .rights p {
         
         font-size: calc(var(--hmain)*.02);
@@ -450,7 +447,7 @@ main h1 {
 
 /* 2 */
 
-@media (max-width: 1367px) and (orientation: landscape){
+@media (max-width: 1400px) and (orientation: landscape){
 
 
     footer {
