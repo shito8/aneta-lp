@@ -387,7 +387,7 @@ header nav i img {
     }
 
     .gruopCards{
-        width: 70%;
+        width: 1400px;
         gap: 45px;
     }
 
@@ -490,7 +490,7 @@ header nav i img {
     }
 
     .gruopCards{
-        width: 75%;
+        width: 2210px;
         gap: 65px;
     }
 
@@ -585,6 +585,7 @@ header nav i img {
     }
 
     .gruopCards{
+        width: 2940px;
         gap: 90px;
     }
 
@@ -647,18 +648,6 @@ header nav i img {
         margin-top: calc(var(--p4k));
     }
 
-}
-
-@media (min-width: 3960px) and (orientation: landscape){
-    .gruopCards{
-        width: 70%;
-    }
-}
-
-@media (min-width: 4700px) and (orientation: landscape){
-    .gruopCards{
-        width: 57%;
-    }
 }
 
 /* 2 */
