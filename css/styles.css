@@ -372,7 +372,7 @@ main {
 
 
 .social{
-    margin: 5% 8%;
+    margin: 5% 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -659,15 +659,26 @@ footer .rights{
     .card p {
         font-size: calc(var(--hmain)*.02);
     }
+
+    .cardSocial {
+        width: 400px;
+        height: 480px;
+        border-radius: 40px;
+    }
+    
+    .cardSocial img {
+        width: 110px;
+        height: 110px;
+    }
         
     .cardSocial h3{
-        font-size: calc(var(--hmain)*.035);
-        margin-top: calc(var(--hmain)*.035);
-        margin-bottom: calc(var(--hmain)*.035);
+        font-size: calc(var(--st2k));
+        margin-top: calc(var(--st2k));
+        margin-bottom: calc(var(--st2k));
     }
     
     .cardSocial p{
-        font-size: calc(var(--hmain)*.018);
+        font-size: calc(var(--p2k));
     }
   
     .logoFooter p, .rights p {
@@ -704,6 +715,28 @@ footer .rights{
 
 @media (min-width: 3200px) and (orientation: landscape){
 
+    .cardSocial {
+        width: 600px;
+        height: 720px;
+        border-radius: 60px;
+    }
+    
+    .cardSocial img {
+        width: 165px;
+        height: 165px;
+    }
+        
+    .cardSocial h3{
+        font-size: calc(var(--st4k));
+        margin-top: calc(var(--st4k));
+        margin-bottom: calc(var(--st4k));
+    }
+    
+    .cardSocial p{
+        font-size: calc(var(--p4k));
+    }
+  
+
     .logoFooter img{
         height: calc(var(--icon4k));
     }
@@ -737,6 +770,23 @@ footer .rights{
         font-size: calc(var(--tmainL));
         line-height: calc(var(--tmainL)*1.2);
         padding: calc(var(--tmainL)*.3) 0px;
+    }
+
+    .cardSocial {
+        width: 280px;
+        height: 340px;
+        border-radius: 30px;
+    }
+    
+    .cardSocial img {
+        width: 80px;
+        height: 80px;
+    }
+        
+    .cardSocial h3{
+        font-size: calc(var(--stHD));
+        margin-top: calc(var(--stHD));
+        margin-bottom: calc(var(--stHD));
     }
 
     .logoFooter p, .rights p {
