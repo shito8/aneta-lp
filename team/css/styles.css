@@ -9,19 +9,27 @@
 :root{
     font-family: 'Prompt', sans-serif;
     --hmain: 100vh;
-    --pmain: 1.5rem;
-    --pmainS: 1.125rem;
-    --titleCard: 1.75rem;
-    --titleCardM: 1.5rem;
-    --titleCardS: 1.25rem;
-    --subtitleCard: 1.5rem;
-    --subtitleCardM: 1.25rem;
-    --subtitleCardS: 1.125rem;
-    --pcard: 1rem;
-    --pscard: 0.875rem;
-    --fooXL: 1.25rem;
-    --fooM: 1.125rem;
-    --pfoo: 1rem;
+
+    --p4k: 2.375rem;
+    --t4k: 3rem;
+    --st4k: 2.625rem; 
+
+    --p2k: 1.75rem;
+    --t2k: 2.25rem;
+    --st2k: 2rem; 
+
+    --pHD: 1.125rem;
+    --tHD: 1.5rem;
+    --stHD: 1.25rem; 
+
+    --pStd: 1rem;
+    --tStd: 1.25rem;
+    --stStd: 1.125rem;
+
+    --icon4k: 4rem;
+    --icon2k: 3rem;
+    --iconHD: 2rem;
+    --iconstd: 1.5rem;
 }
 
 body{
@@ -101,7 +109,7 @@ header nav .switch i:first-child img{
     position: absolute;
     right: calc(var(--hmain)*.14);
     top: calc(var(--hmain)*.03);
-    border-radius: calc(var(--pfoo)*.4);
+    border-radius: calc(var(--pStd)*.4);
     transform: translateY(0px);
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -114,20 +122,20 @@ header nav .switch i:first-child img{
 }
 
 .menu ul {
-    padding-top: calc(var(--pfoo)*.75);
+    padding-top: calc(var(--pStd)*.75);
 }
 
 .menu li {
-    font-size: calc(var(--pfoo));
+    font-size: calc(var(--pStd));
     font-weight: 600;
-    margin: calc(var(--pfoo)*.75) 0;
-    padding-left: calc(var(--pfoo));
+    margin: calc(var(--pStd)*.75) 0;
+    padding-left: calc(var(--pStd));
 }
 
 .menu hr{
     border: none;
     border-bottom: #E0AD00 2px solid;
-    width: calc(var(--pfoo)*2);
+    width: calc(var(--pStd)*2);
 }
 
 .menu a{
@@ -153,23 +161,22 @@ header nav i img {
 
     main h1 {
         font-weight: 700;
-        font-size: calc(var(--pmain));
-        margin-bottom: calc(var(--pmain)*3);
+        font-size: calc(var(--tHD));
+        margin-bottom: calc(var(--tHD)*3);
     }
     
     .gruopCards{
-        width: 100%; /* 87% */
+        width: 80%;
         display: flex;
         justify-content: center;
-        gap: 45px;
+        gap: 40px;
         flex-wrap: wrap;
     }
 
     .card {
         background: linear-gradient(180deg, #E3F3FB 0%, #E7F5FB 100%);
-        width: calc((100% - 45px)/5); /* 260px */
-        /* height 350px*/
-        border-radius: 7px;
+        width: 260px;
+        border-radius: 10px;
         transition: 0.25s;
     }
 
@@ -204,14 +211,14 @@ header nav i img {
     .main_card h4 {
         font-weight: 500;
         font-style: italic;
-        font-size: calc(var(--titleCardS));
-        margin-top: calc(var(--titleCardS));
+        font-size: calc(var(--tStd));
+        margin-top: calc(var(--tStd));
     }
 
     .main_card h3{
         font-weight: 600;
-        font-size: calc(var(--subtitleCardS));
-        margin: calc(var(--titleCardS)*.5) 0;
+        font-size: calc(var(--stStd));
+        margin: calc(var(--tStd)*.5) 0;
     }
 
     .main_card .description {
@@ -219,13 +226,13 @@ header nav i img {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: calc(var(--titleCardS)*.5);
+        margin-top: calc(var(--tStd)*.5);
     }
 
     .main_card .description p{
         font-weight: 400;
         text-align: center;
-        line-height: calc(var(--pcard)*1.5);
+        line-height: calc(var(--pStd)*1.5);
     }
 
     /* --- Footer scheme --- */
@@ -255,14 +262,14 @@ header nav i img {
     }
     
     .logoFooter img{
-        height: calc(var(--hmain)*.04);
+        height: calc(var(--iconstd));
     }
     
     .logoFooter p, .rights p {
         
-        font-size: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
         font-weight: 500;
-        margin-top: calc(var(--pfoo)*.5);
+        margin-top: calc(var(--pStd)*.5);
     }
     
     footer nav {
@@ -274,15 +281,15 @@ header nav i img {
     
     footer h4 {
         font-weight: 700;
-        font-size: calc(var(--fooXL));
-        margin-bottom: calc(var(--fooXL));
+        font-size: calc(var(--stStd));
+        margin-bottom: calc(var(--stStd));
         color: #000000;
     }
     
     footer li {
-        font-size: calc(var(--fooXL));
+        font-size: calc(var(--pStd));
         font-weight: 600;
-        margin-bottom: calc(var(--fooXL));
+        margin-bottom: calc(var(--pStd));
         color: #000000;
         transition: 0.15s;
     }
@@ -298,7 +305,7 @@ header nav i img {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        margin-top: calc(var(--pfoo)*2);
+        margin-top: calc(var(--pStd)*2);
     }
     
     .icons {
@@ -312,8 +319,8 @@ header nav i img {
     }
     
     .icons img {
-        height: calc(var(--hmain)*.03);
-        width: calc(var(--hmain)*.03);
+        height: calc(var(--iconstd));
+        width: calc(var(--iconstd));
     }
     
     footer i{
@@ -325,7 +332,7 @@ header nav i img {
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        margin-top: calc(var(--pfoo)*.5);
+        margin-top: calc(var(--pStd)*.5);
     }
 
 
@@ -351,71 +358,67 @@ header nav i img {
 
 /* --- Medias Queries--- */
 
-@media (min-width: 1500px) and (orientation: landscape){
+@media (min-width: 1640px) and (orientation: landscape){
 
     .menu {
-        width: calc(var(--hmain)*.3);
-        border-radius: calc(var(--hmain)*.009);
+        width: 240px;
+        border-radius: 10px;
     }
 
     .menu ul {
-        padding-top: calc(var(--hmain)*.017);
+        padding-top: calc(var(--pHD)*.75);
     }
     
     .menu li {
-        font-size: calc(var(--hmain)*.022);
-        margin: calc(var(--hmain)*.017) 0;
-        padding-left: calc(var(--hmain)*.022);
+        font-size: calc(var(--pHD));
+        margin: calc(var(--pHD)*.75) 0;
+        padding-left: calc(var(--pHD));
     }
     
     .menu hr{
-        width: calc(var(--hmain)*.044);
-        border-bottom: #E0AD00 calc(var(--hmain)*.003) solid;
+        width: calc(var(--pHD)*2);
+        border-bottom: #E0AD00 2.25px solid;
     }
 
 
     main h1 {
-        font-size: calc(var(--hmain)*.033);
-        margin-bottom: calc(var(--hmain)*.1);
+        font-size: calc(var(--tHD));
+        margin-bottom: calc(var(--tHD)*3);
     }
 
     .gruopCards{
-        width: 78%;
-        gap: calc(var(--hmain)*.05);
+        width: 70%;
+        gap: 45px;
     }
 
     .card {
-        width: calc((100% - 45px)/5); /* .27--.34 */
-        
-        border-radius: calc(var(--hmain)*.008); /*.01*/
+        width: 285px;
+        border-radius: 12px;
     }
 
     .card .icon_card img{
-        width: calc(var(--hmain)*.024); /*.03*/
-        border-radius: calc(var(--hmain)*.008) 0 0 0; /*.01*/
+        width: 30px;
+        border-radius: 12px 0 0 0;
     }
 
-    .card .main_card {
-        padding: 5% 10% 5% 10%;
-    }
 
     .main_card h4 {
-        font-size: calc(var(--hmain)*.022); /*.028*/
-        margin-top: calc(var(--hmain)*.022); /*.028*/
+        font-size: calc(var(--tHD));
+        margin-top: calc(var(--tHD));
     }
 
     .main_card h3{
-        font-size: calc(var(--hmain)*.018); /*.023*/
-        margin: calc(var(--hmain)*.012) 0; /*.014*/
+        font-size: calc(var(--stHD));
+        margin: calc(var(--tHD)*.5) 0;
     }
 
     .main_card .description {
-        margin-top: calc(var(--hmain)*.012); /*.014*/
+        margin-top: calc(var(--tHD)*.5);
     }
 
     .main_card .description p{
-        line-height: calc(var(--hmain)*.018); /*.022*/
-        font-size: calc(var(--hmain)*.018); /*.022*/
+        line-height: calc(var(--pHD)*1.5);
+        font-size: calc(var(--pHD));
     }
     /*  --- inicio Background --- */
     .footer div {
@@ -426,24 +429,236 @@ header nav i img {
    
     .logoFooter p, .rights p {
         
-        font-size: calc(var(--hmain)*.02);
-        margin-top: calc(var(--hmain)*.01);
+        font-size: calc(var(--pHD));
+        margin-top: calc(var(--pHD)*.5);
+    }
+
+    .logoFooter img{
+        height: calc(var(--iconHD));
     }
 
     footer h4 {
-        font-size: calc(var(--hmain)*.022);
-        margin-bottom: calc(var(--hmain)*.022);
+        font-size: calc(var(--stHD));
+        margin-bottom: calc(var(--stHD));
     }
     
     footer li {
-        font-size: calc(var(--hmain)*.022);
-        margin-bottom: calc(var(--hmain)*.022);
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
+    }
+
+    .icons img {
+        height: calc(var(--iconHD));
+        width: calc(var(--iconHD));
     }
 
     footer .rights{
-        margin-top: calc(var(--hmain)*.025);
+        margin-top: calc(var(--pHD));
     }
 
+}
+
+
+@media (min-width: 2240px) and (orientation: landscape){
+
+
+    .menu {
+        width: 385px;
+        border-radius: 10px;
+    }
+
+    .menu ul {
+        padding-top: calc(var(--p2k)*.75);
+    }
+    
+    .menu li {
+        font-size: calc(var(--p2k));
+        margin: calc(var(--p2k)*.75) 0;
+        padding-left: calc(var(--p2k));
+    }
+    
+    .menu hr{
+        width: calc(var(--p2k)*2);
+        border-bottom: #E0AD00 2.25px solid;
+    }
+
+ 
+
+    main h1 {
+        font-size: calc(var(--t2k));
+        margin-bottom: calc(var(--t2k)*3);
+    }
+
+    .gruopCards{
+        width: 75%;
+        gap: 65px;
+    }
+
+    .card {
+        width: 455px;
+        border-radius: 15px;
+    }
+
+    .card .icon_card img{
+        width: 45px;
+        border-radius: 15px 0 0 0;
+    }
+
+
+    .main_card h4 {
+        font-size: calc(var(--t2k));
+        margin-top: calc(var(--t2k));
+    }
+
+    .main_card h3{
+        font-size: calc(var(--st2k));
+        margin: calc(var(--t2k)*.5) 0;
+    }
+
+    .main_card .description {
+        margin-top: calc(var(--t2k)*.5);
+    }
+
+    .main_card .description p{
+        line-height: calc(var(--p2k)*1.5);
+        font-size: calc(var(--p2k));
+    }
+
+    .logoFooter p, .rights p {
+        
+        font-size: calc(var(--p2k));
+        margin-top: calc(var(--p2k)*.5);
+    }
+
+    .logoFooter img{
+        height: calc(var(--icon2k));
+    }
+
+    footer h4 {
+        font-size: calc(var(--st2k));
+        margin-bottom: calc(var(--st2k));
+    }
+    
+    footer li {
+        font-size: calc(var(--p2k));
+        margin-bottom: calc(var(--p2k));
+    }
+
+    .icons img {
+        height: calc(var(--icon2k));
+        width: calc(var(--icon2k));
+    }
+
+
+    footer .rights{
+        margin-top: calc(var(--p2k));
+    }
+
+}
+
+@media (min-width: 3200px) and (orientation: landscape){
+
+    .menu {
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .menu ul {
+        padding-top: calc(var(--p4k)*.75);
+    }
+    
+    .menu li {
+        font-size: calc(var(--p4k));
+        margin: calc(var(--p4k)*.75) 0;
+        padding-left: calc(var(--p4k));
+    }
+    
+    .menu hr{
+        width: calc(var(--p4k)*2);
+        border-bottom: #E0AD00 2.25px solid;
+    }
+
+
+    main h1 {
+        font-size: calc(var(--t4k));
+        margin-bottom: calc(var(--t4k)*3);
+    }
+
+    .gruopCards{
+        gap: 90px;
+    }
+
+    .card {
+        width: 600px;
+        border-radius: 20px;
+    }
+
+    .card .icon_card img{
+        width: 60px;
+        border-radius: 20px 0 0 0;
+    }
+
+
+    .main_card h4 {
+        font-size: calc(var(--t4k));
+        margin-top: calc(var(--t4k));
+    }
+
+    .main_card h3{
+        font-size: calc(var(--st4k));
+        margin: calc(var(--t4k)*.5) 0;
+    }
+
+    .main_card .description {
+        margin-top: calc(var(--t4k)*.5);
+    }
+
+    .main_card .description p{
+        line-height: calc(var(--p4k)*1.5);
+        font-size: calc(var(--p4k));
+    }
+
+    .logoFooter p, .rights p {
+        
+        font-size: calc(var(--p4k));
+        margin-top: calc(var(--p4k)*.5);
+    }
+
+    .logoFooter img{
+        height: calc(var(--icon4k));
+    }
+
+    footer h4 {
+        font-size: calc(var(--st4k));
+        margin-bottom: calc(var(--st4k));
+    }
+    
+    footer li {
+        font-size: calc(var(--p4k));
+        margin-bottom: calc(var(--p4k));
+    }
+
+    .icons img {
+        height: calc(var(--icon4k));
+        width: calc(var(--icon4k));
+    }
+
+    footer .rights{
+        margin-top: calc(var(--p4k));
+    }
+
+}
+
+@media (min-width: 3960px) and (orientation: landscape){
+    .gruopCards{
+        width: 70%;
+    }
+}
+
+@media (min-width: 4700px) and (orientation: landscape){
+    .gruopCards{
+        width: 57%;
+    }
 }
 
 /* 2 */
@@ -451,11 +666,10 @@ header nav i img {
 @media (max-width: 1499px) and (orientation: landscape){
 
     .gruopCards{
-        width: 85%; /* 87% */
+        width: 85%;
     }
     .card {
-        width: 260px; /* 260px */
-        /* height 350px*/
+        width: 260px;
     }
 
     footer {
@@ -470,13 +684,13 @@ header nav i img {
     }
 
     footer h4 {
-        font-size: calc(var(--fooM));
-        margin-bottom: calc(var(--fooM));
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
     }
     
     footer li {
-        font-size: calc(var(--pfoo));
-        margin-bottom: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
+        margin-bottom: calc(var(--pStd));
     }
 
 }
@@ -545,7 +759,7 @@ header nav i img {
 
     footer .foot{
         flex-direction: column;
-        padding-top: calc(var(--pfoo)*1.5);
+        padding-top: calc(var(--pStd)*1.5);
     }
 
 
@@ -557,12 +771,12 @@ header nav i img {
         
         justify-content: center;
         align-items: center;
-    
     }
 
-    .logoFooter img {
-        height: calc(var(--hmain)*.1); 
+    .logoFooter img{
+        height: calc(var(--iconstd));
     }
+
     .logoFooter p {
         padding: 0 15%;
         text-align: center;
@@ -573,7 +787,7 @@ header nav i img {
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: calc(var(--fooM));
+        margin-top: calc(var(--pHD));
 
     }
 
@@ -582,31 +796,32 @@ header nav i img {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin: calc(var(--fooM)) 0;
+        margin: calc(var(--pHD)) 0;
     }
     footer section {
         width: 100%;
         padding-left: calc(var(--hmain)*.027);
         padding: 0px calc(var(--hmain)*.014);
-        padding-bottom: calc(var(--fooM));
+        padding-bottom: calc(var(--pHD));
     }
 
     footer h4 {
-        font-size: calc(var(--fooM));
-        margin-bottom: calc(var(--fooM));
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
     }
     
     footer li {
-        font-size: calc(var(--pfoo));
-        margin-bottom: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
+        margin-bottom: calc(var(--pStd));
     }
 
     .icons{
         gap: calc(var(--hmain)*.055);
     }
+
     .icons img {
-        height: calc(var(--hmain)*.055);
-        width: calc(var(--hmain)*.055);
+        height: calc(var(--iconstd));
+        width: calc(var(--iconstd));
     }
 
     footer .rights p{
@@ -629,7 +844,26 @@ header nav i img {
 
     header {
         margin: 0 calc(var(--hmain)*.03);
-        margin-bottom: calc(var(--pmain)*3);
+        margin-bottom: calc(var(--tHD)*3);
+    }
+
+    header img{
+        height: calc(var(--hmain)*.03);
+    }
+
+    header nav .switch i img {
+        height: calc(var(--hmain)*.03);
+        width: calc(var(--hmain)*.03);
+    }
+    
+    header nav .switch i:first-child img{
+        height: calc(var(--hmain)*.024);
+        width: calc(var(--hmain)*.024);
+        margin: calc(var(--hmain)*.003) calc(var(--hmain)*.003);
+    }
+    header nav i img {
+        height: calc(var(--hmain)*.0225);
+        width: calc(var(--hmain)*.0225);
     }
 
     .menu {
@@ -648,7 +882,7 @@ header nav i img {
 
     footer .foot{
         flex-direction: column;
-        padding-top: calc(var(--pfoo)*1.5);
+        padding-top: calc(var(--pStd)*1.5);
     }
 
 
@@ -662,8 +896,8 @@ header nav i img {
         align-items: center;
     }
 
-    .logoFooter img {
-        height: calc(var(--hmain)*.03); 
+    .logoFooter img{
+        height: calc(var(--iconstd));
     }
 
     .logoFooter p{
@@ -676,7 +910,7 @@ header nav i img {
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: calc(var(--fooM));
+        margin-top: calc(var(--pHD));
 
     }
 
@@ -685,13 +919,13 @@ header nav i img {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin: calc(var(--fooM)) 0;
+        margin: calc(var(--pHD)) 0;
     }
     footer section {
         width: 100%;
         padding-left: calc(var(--hmain)*.027);
         padding: 0px calc(var(--hmain)*.014);
-        padding-bottom: calc(var(--fooM));
+        padding-bottom: calc(var(--pHD));
     }
 
     footer .rights{
@@ -704,25 +938,40 @@ header nav i img {
 
 
     footer h4 {
-        font-size: calc(var(--fooM));
-        margin-bottom: calc(var(--fooM));
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
     }
     
     footer li {
-        font-size: calc(var(--pfoo));
-        margin-bottom: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
+        margin-bottom: calc(var(--pStd));
     }
 
 }
 
 @media (max-width: 600px) and (orientation: portrait){
 
+    header img{
+        height: calc(var(--hmain)*.04);
+    }
+
+    header nav .switch i img {
+        height: calc(var(--hmain)*.04);
+        width: calc(var(--hmain)*.04);
+    }
+    
+    header nav .switch i:first-child img{
+        height: calc(var(--hmain)*.032);
+        width: calc(var(--hmain)*.032);
+        margin: calc(var(--hmain)*.004) calc(var(--hmain)*.004);
+    }
+    header nav i img {
+        height: calc(var(--hmain)*.03);
+        width: calc(var(--hmain)*.03);
+    }
     .menu {
         width: 190px;
     }
 
-    .logoFooter img {
-        height: calc(var(--hmain)*.04); 
-    }
 
 }

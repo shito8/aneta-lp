@@ -456,7 +456,6 @@ footer article {
 
 .logoFooter img{
     height: calc(var(--hmain)*.04);
-
 }
 
 .logoFooter p, .rights p {
@@ -1029,6 +1028,25 @@ footer .rights{
         display: none;
     }
 
+    header img{
+        height: calc(var(--hmain)*.03);
+    }
+
+    header nav .switch i img {
+        height: calc(var(--hmain)*.03);
+        width: calc(var(--hmain)*.03);
+    }
+    
+    header nav .switch i:first-child img{
+        height: calc(var(--hmain)*.024);
+        width: calc(var(--hmain)*.024);
+        margin: calc(var(--hmain)*.003) calc(var(--hmain)*.003);
+    }
+    header nav i img {
+        height: calc(var(--hmain)*.0225);
+        width: calc(var(--hmain)*.0225);
+    }
+
     .menu {
         right: calc(var(--hmain)*.12);
     }
@@ -1199,6 +1217,24 @@ footer .rights{
 
 @media (max-width: 600px) and (orientation: portrait){
 
+    header img{
+        height: calc(var(--hmain)*.04);
+    }
+
+    header nav .switch i img {
+        height: calc(var(--hmain)*.04);
+        width: calc(var(--hmain)*.04);
+    }
+    
+    header nav .switch i:first-child img{
+        height: calc(var(--hmain)*.032);
+        width: calc(var(--hmain)*.032);
+        margin: calc(var(--hmain)*.004) calc(var(--hmain)*.004);
+    }
+    header nav i img {
+        height: calc(var(--hmain)*.03);
+        width: calc(var(--hmain)*.03);
+    }
     .menu {
         width: 190px;
     }
