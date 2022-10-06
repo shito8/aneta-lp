@@ -22,11 +22,28 @@
     --titlesS: 1.75rem;
     --titleCard: 1.75rem;
     --titleCardS: 1.5rem;
-    --pcard: 1rem;
-    --pscard: 0.875rem;
-    --fooXL: 1.25rem;
-    --fooM: 1.125rem;
-    --pfoo: 1rem;
+
+    --p4k: 2.375rem;
+    --t4k: 3rem;
+    --st4k: 2.625rem; 
+
+    --p2k: 1.75rem;
+    --t2k: 2.25rem;
+    --st2k: 2rem; 
+
+    --pHD: 1.125rem;
+    --tHD: 1.5rem;
+    --stHD: 1.25rem; 
+
+    --pmin: 0.875rem;
+    --pStd: 1rem;
+    --tStd: 1.25rem;
+    --stStd: 1.125rem;
+
+    --icon4k: 4rem;
+    --icon2k: 3rem;
+    --iconHD: 2rem;
+    --iconstd: 1.5rem;
 }
 
 body{
@@ -62,7 +79,7 @@ header nav {
     position: absolute;
     right: calc(var(--hmain)*.14);
     top: calc(var(--hmain)*.03);
-    border-radius: calc(var(--pfoo)*.4);
+    border-radius: calc(var(--pStd)*.4);
     transform: translateY(0px);
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -75,20 +92,20 @@ header nav {
 }
 
 .menu ul {
-    padding-top: calc(var(--pfoo)*.75);
+    padding-top: calc(var(--pStd)*.75);
 }
 
 .menu li {
-    font-size: calc(var(--pfoo));
+    font-size: calc(var(--pStd));
     font-weight: 600;
-    margin: calc(var(--pfoo)*.75) 0;
-    padding-left: calc(var(--pfoo));
+    margin: calc(var(--pStd)*.75) 0;
+    padding-left: calc(var(--pStd));
 }
 
 .menu hr{
     border: none;
     border-bottom: #E0AD00 2px solid;
-    width: calc(var(--pfoo)*2);
+    width: calc(var(--pStd)*2);
 }
 
 .menu a{
@@ -277,7 +294,7 @@ main {
 
 .card p {
     font-weight: 400;
-    font-size: calc(var(--pscard));
+    font-size: calc(var(--pmin));
     text-align: center;
 }
 
@@ -407,7 +424,7 @@ main {
 
 .cardSocial p{
     font-weight: 500;
-    font-size: calc(var(--pscard));
+    font-size: calc(var(--pmin));
     text-align: center;
 }
 
@@ -455,14 +472,14 @@ footer article {
 }
 
 .logoFooter img{
-    height: calc(var(--hmain)*.04);
+    height: calc(var(--iconstd));
 }
 
 .logoFooter p, .rights p {
     
-    font-size: calc(var(--pfoo));
+    font-size: calc(var(--pStd));
     font-weight: 500;
-    margin-top: calc(var(--pfoo)*.5);
+    margin-top: calc(var(--pStd)*.5);
 }
 
 footer nav {
@@ -474,15 +491,15 @@ footer nav {
 
 footer h4 {
     font-weight: 700;
-    font-size: calc(var(--fooXL));
-    margin-bottom: calc(var(--fooXL));
+    font-size: calc(var(--stHD));
+    margin-bottom: calc(var(--stHD));
     color: #000000;
 }
 
 footer li {
-    font-size: calc(var(--fooXL));
+    font-size: calc(var(--stHD));
     font-weight: 600;
-    margin-bottom: calc(var(--fooXL));
+    margin-bottom: calc(var(--stHD));
     color: #000000;
     transition: 0.15s;
 }
@@ -498,7 +515,7 @@ footer .icons{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-top: calc(var(--pfoo)*2);
+    margin-top: calc(var(--pStd)*2);
 }
 
 .icons {
@@ -512,8 +529,8 @@ footer .icons{
 }
 
 .icons img {
-    height: calc(var(--hmain)*.03);
-    width: calc(var(--hmain)*.03);
+    height: calc(var(--iconstd));
+    width: calc(var(--iconstd));
 }
 
 footer i{
@@ -525,7 +542,7 @@ footer .rights{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin-top: calc(var(--pfoo)*.5);
+    margin-top: calc(var(--pStd)*.5);
 }
 
         /* --- Interactive --- */
@@ -655,35 +672,100 @@ footer .rights{
   
     .logoFooter p, .rights p {
         
-        font-size: calc(var(--hmain)*.02);
-        margin-top: calc(var(--hmain)*.01);
+        font-size: calc(var(--p2k));
+        margin-top: calc(var(--p2k)*.5);
+    }
+
+    .logoFooter img{
+        height: calc(var(--icon2k));
     }
 
     footer h4 {
-        font-size: calc(var(--hmain)*.022);
-        margin-bottom: calc(var(--hmain)*.022);
+        font-size: calc(var(--st2k));
+        margin-bottom: calc(var(--st2k));
     }
     
     footer li {
-        font-size: calc(var(--hmain)*.022);
-        margin-bottom: calc(var(--hmain)*.022);
+        font-size: calc(var(--p2k));
+        margin-bottom: calc(var(--p2k));
+    }
+
+    .icons img {
+        height: calc(var(--icon2k));
+        width: calc(var(--icon2k));
+    }
+
+
+    footer .rights{
+        margin-top: calc(var(--p2k));
+    }
+
+}
+
+@media (min-width: 3200px) and (orientation: landscape){
+
+    .logoFooter img{
+        height: calc(var(--icon4k));
+    }
+
+    footer h4 {
+        font-size: calc(var(--st4k));
+        margin-bottom: calc(var(--st4k));
+    }
+    
+    footer li {
+        font-size: calc(var(--p4k));
+        margin-bottom: calc(var(--p4k));
+    }
+
+    .icons img {
+        height: calc(var(--icon4k));
+        width: calc(var(--icon4k));
     }
 
     footer .rights{
-        margin-top: calc(var(--hmain)*.025);
+        margin-top: calc(var(--p4k));
     }
-
 }
 
 
 /* 1 L  */
 
-@media (max-width: 1888px) and (orientation: landscape){
+@media (max-width: 1999px) and (orientation: landscape){
 
     .articleLeft h2 {
         font-size: calc(var(--tmainL));
         line-height: calc(var(--tmainL)*1.2);
         padding: calc(var(--tmainL)*.3) 0px;
+    }
+
+    .logoFooter p, .rights p {
+        
+        font-size: calc(var(--pHD));
+        margin-top: calc(var(--pHD)*.5);
+    }
+
+    .logoFooter img{
+        height: calc(var(--iconHD));
+    }
+
+    footer h4 {
+        font-size: calc(var(--stHD));
+        margin-bottom: calc(var(--stHD));
+    }
+    
+    footer li {
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
+    }
+
+    .icons img {
+        height: calc(var(--iconHD));
+        width: calc(var(--iconHD));
+    }
+
+    footer .rights{
+        margin-top: calc(var(--pHD));
     }
 
 
@@ -717,7 +799,7 @@ footer .rights{
 
 /* 2 */
 
-@media (max-width: 1367px) and (orientation: landscape){
+@media (max-width: 1499px) and (orientation: landscape){
     
     .social{
         margin: 5% 5%;
@@ -751,13 +833,13 @@ footer .rights{
     }
 
     footer h4 {
-        font-size: calc(var(--fooM));
-        margin-bottom: calc(var(--fooM));
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
     }
     
     footer li {
-        font-size: calc(var(--pfoo));
-        margin-bottom: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
+        margin-bottom: calc(var(--pStd));
     }
 
 }
@@ -887,7 +969,7 @@ footer .rights{
     }
 
     .card p {
-        font-size: calc(var(--pscard));
+        font-size: calc(var(--pmin));
     }
 
     .groupClients{
@@ -926,7 +1008,7 @@ footer .rights{
     }
 
     .cardSocial p{
-        font-size: calc(var(--pscard));
+        font-size: calc(var(--pmin));
     }
 
 
@@ -938,7 +1020,7 @@ footer .rights{
 
     footer .foot{
         flex-direction: column;
-        padding-top: calc(var(--pfoo)*1.5);
+        padding-top: calc(var(--pStd)*1.5);
     }
 
 
@@ -966,7 +1048,7 @@ footer .rights{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: calc(var(--fooM));
+        margin-top: calc(var(--pHD));
 
     }
 
@@ -975,23 +1057,23 @@ footer .rights{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin: calc(var(--fooM)) 0;
+        margin: calc(var(--pHD)) 0;
     }
     footer section {
         width: 100%;
         padding-left: calc(var(--hmain)*.027);
         padding: 0px calc(var(--hmain)*.014);
-        padding-bottom: calc(var(--fooM));
+        padding-bottom: calc(var(--pHD));
     }
 
     footer h4 {
-        font-size: calc(var(--fooM));
-        margin-bottom: calc(var(--fooM));
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
     }
     
     footer li {
-        font-size: calc(var(--pfoo));
-        margin-bottom: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
+        margin-bottom: calc(var(--pStd));
     }
 
     .icons{
@@ -1102,7 +1184,7 @@ footer .rights{
     }
 
     .card p {
-        font-size: calc(var(--pscard));
+        font-size: calc(var(--pmin));
     }
 
     .cardClient {
@@ -1126,7 +1208,7 @@ footer .rights{
     }
 
     .cardSocial p{
-        font-size: calc(var(--pscard));
+        font-size: calc(var(--pmin));
     }
 
     .cardSocial img {
@@ -1148,7 +1230,7 @@ footer .rights{
 
     footer .foot{
         flex-direction: column;
-        padding-top: calc(var(--pfoo)*1.5);
+        padding-top: calc(var(--pStd)*1.5);
     }
 
 
@@ -1176,7 +1258,7 @@ footer .rights{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: calc(var(--fooM));
+        margin-top: calc(var(--pHD));
 
     }
 
@@ -1185,13 +1267,13 @@ footer .rights{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin: calc(var(--fooM)) 0;
+        margin: calc(var(--pHD)) 0;
     }
     footer section {
         width: 100%;
         padding-left: calc(var(--hmain)*.027);
         padding: 0px calc(var(--hmain)*.014);
-        padding-bottom: calc(var(--fooM));
+        padding-bottom: calc(var(--pHD));
     }
 
     footer .rights{
@@ -1204,13 +1286,13 @@ footer .rights{
 
 
     footer h4 {
-        font-size: calc(var(--fooM));
-        margin-bottom: calc(var(--fooM));
+        font-size: calc(var(--pHD));
+        margin-bottom: calc(var(--pHD));
     }
     
     footer li {
-        font-size: calc(var(--pfoo));
-        margin-bottom: calc(var(--pfoo));
+        font-size: calc(var(--pStd));
+        margin-bottom: calc(var(--pStd));
     }
 
 }
@@ -1259,7 +1341,7 @@ footer .rights{
     }
 
     .card h3 {
-        font-size: calc(var(--fooXL));
+        font-size: calc(var(--stHD));
     }
 
     .title h2, .clients h2, .social h2{
