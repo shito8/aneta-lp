@@ -661,14 +661,14 @@ footer .rights{
     }
 
     .cardSocial {
-        width: 400px;
-        height: 480px;
+        width: 360px;
+        height: 440px;
         border-radius: 40px;
     }
     
     .cardSocial img {
-        width: 110px;
-        height: 110px;
+        width: 100px;
+        height: 100px;
     }
         
     .cardSocial h3{
