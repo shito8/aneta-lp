@@ -1,10 +1,10 @@
-*{
+/**{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Prompt', sans-serif;
-}
+}*/
 
 :root{
     font-family: 'Prompt', sans-serif;
@@ -31,7 +31,7 @@
     --iconHD: 2rem;
     --iconstd: 1.5rem;
 }
-
+/*
 body{
     width: 100%;
     background: linear-gradient(181.25deg, rgba(255, 255, 255, 0) 41.55%, #FFFFFF 152.92%), linear-gradient(77.15deg, rgba(228, 244, 252, 0.2) 53.02%, rgba(255, 215, 138, 0.2) 89.5%), linear-gradient(154.49deg, rgba(255, 255, 255, 0) 20.36%, #FEFEFE 106.02%), linear-gradient(9.62deg, #9BD9F2 -0.79%, #BBA9E7 165.05%);
@@ -39,7 +39,7 @@ body{
 }
 
    /* --- Header scheme --- */
-
+/*
 header {
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ header nav .switch i:first-child img{
     left: 0;
 }
 
-/*  --- Fin Background --- */
+/*  --- Fin Background --- *//*
 .menu {
     align-self: baseline;
     background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
@@ -150,9 +150,9 @@ header nav i img {
     height: calc(var(--hmain)*.03);
     width: calc(var(--hmain)*.03);
 }
-
+*/
    /* --- Cards scheme --- */
-
+/*
    main {
     display: flex;
     align-items: center;
@@ -164,7 +164,7 @@ header nav i img {
         font-size: calc(var(--tHD));
         margin-bottom: calc(var(--tHD)*3);
     }
-    
+    */
     .gruopCards{
         width: 80%;
         display: flex;
