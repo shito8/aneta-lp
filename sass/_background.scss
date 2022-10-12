@@ -4,7 +4,7 @@ $img-back-hd: 500px;
 $img-back-2k: 700px;
 $img-back-4k: 900px;
 
-.background {
+.background {  
     position: relative;
     z-index: -1;
     @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
@@ -14,7 +14,7 @@ $img-back-4k: 900px;
         display: none;
     }
 
-    div {
+    div {       
         position: absolute;
         top: $img-back-std;
         img {
@@ -33,6 +33,7 @@ $img-back-4k: 900px;
             } 
         }
         @media (min-width: 3200px) and (orientation: landscape){
+            left: calc((100vw - 3200px)/2);
             top: $img-back-4k;
             img{
                 height: $img-back-4k;
@@ -52,6 +53,8 @@ $img-back-4k: 900px;
             top: 180px;
         }
         @media (min-width: 3200px) and (orientation: landscape){
+            left: auto;
+            right: calc((100vw - 3200px)/2);
             top: 250px;
         }
     }

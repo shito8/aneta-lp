@@ -1,120 +1,64 @@
 
+$icon-std: 2rem;
+$height-std: 88px;
+$padding-std: 24px;
 
-$icon-std: 1.5rem;
-$icon-hd: 2rem;
-$icon-2k: 3rem;
-$icon-4k: 4rem;
+$height-min: 68px;
+$padding-min: 16px;
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: $icon-std*3.125;
-    margin: 0 $icon-std;
-    padding: $icon-std*.5 0;
-    @media (min-width: 1640px) and (orientation: landscape){
-        margin: 0 $icon-hd;
-        padding: $icon-hd*.5 0;
-        height: $icon-hd*3.125;
-    }
-    @media (min-width: 2240px) and (orientation: landscape){
-        margin: 0 $icon-2k;
-        padding: $icon-2k*.5 0;
-        height: $icon-2k*3.125;
-    }
+.main{
     @media (min-width: 3200px) and (orientation: landscape){
-        margin: 0 $icon-4k;
-        padding: $icon-4k*.5 0;
-        height: $icon-4k*3.125;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    img{
-        height: $icon-std;
-        @media (min-width: 1640px) and (orientation: landscape){
-            height: $icon-hd;
-        }
-        @media (min-width: 2240px) and (orientation: landscape){
-            height: $icon-2k;
-        }
-        @media (min-width: 3200px) and (orientation: landscape){
-            height: $icon-4k;
-        }
-    }
-    nav{
+    header{
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        height: 100%;
-        i{
-            img{
-                height: $icon-std*.75;
-                width: $icon-std*.75;
-                @media (min-width: 1640px) and (orientation: landscape){
-                    height: $icon-hd*.75;
-                    width: $icon-hd*.75;
-                }
-                @media (min-width: 2240px) and (orientation: landscape){
-                    height: $icon-2k*.75;
-                    width: $icon-2k*.75;
-                }
-                @media (min-width: 3200px) and (orientation: landscape){
-                    height: $icon-4k*.75;
-                    width: $icon-4k*.75;
-                }
-            }
+        justify-content: space-between;
+        height: $height-std;
+        padding: $padding-std;
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: 3200px;
         }
-        .switch{
-            margin-left: $icon-std*.375;
-            @media (min-width: 1640px) and (orientation: landscape){
-                margin-left: $icon-hd*.375;
-            }
-            @media (min-width: 2240px) and (orientation: landscape){
-                margin-left: $icon-2k*.375;
-            }
-            @media (min-width: 3200px) and (orientation: landscape){
-                margin-left: $icon-4k*.375;
-            }
+        @media (max-width: 1044px) and (orientation: portrait) {
+            height: $height-min;
+            padding: $padding-min;
+        }
+        img{
+            height: $icon-std;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
             i{
                 img{
-                    height: $icon-std;
-                    width: $icon-std;
-                    @media (min-width: 1640px) and (orientation: landscape){
-                        height: $icon-hd;
-                        width: $icon-hd;
-                    }
-                    @media (min-width: 2240px) and (orientation: landscape){
-                        height: $icon-2k;
-                        width: $icon-2k;
-                    }
-                    @media (min-width: 3200px) and (orientation: landscape){
-                        height: $icon-4k;
-                        width: $icon-4k;
-                    }
-                }
-                &:first-child{
-                    img{
-                        height: $icon-std*.8;
-                        width: $icon-std*.8;
-                        margin: $icon-std*.1;
-                        @media (min-width: 1640px) and (orientation: landscape){
-                            height: $icon-hd*.8;
-                            width: $icon-hd*.8;
-                            margin: $icon-hd*.1;
-                        }
-                        @media (min-width: 2240px) and (orientation: landscape){
-                            height: $icon-2k*.8;
-                            width: $icon-2k*.8;
-                            margin: $icon-2k*.1;
-                        }
-                        @media (min-width: 3200px) and (orientation: landscape){
-                            height: $icon-4k*.8;
-                            width: $icon-4k*.8;
-                            margin: $icon-4k*.1;
-                        }
-                    }
+                    height: $icon-std*.75;
+                    width: $icon-std*.75;
                 }
             }
-            &:hover{
-                cursor: pointer;
+            .switch{
+                margin-left: $icon-std*.375;
+
+                i{
+                    img{
+                        height: $icon-std;
+                        width: $icon-std;
+                    }
+                    &:first-child{
+                        img{
+                            height: $icon-std*.8;
+                            width: $icon-std*.8;
+                            margin: $icon-std*.1;
+
+                        }
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }

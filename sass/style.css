@@ -1,156 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
-header {
+@media (min-width: 3200px) and (orientation: landscape) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4.6875rem;
-  margin: 0 1.5rem;
-  padding: 0.75rem 0;
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  header {
-    margin: 0 2rem;
-    padding: 1rem 0;
-    height: 6.25rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  header {
-    margin: 0 3rem;
-    padding: 1.5rem 0;
-    height: 9.375rem;
-  }
+  height: 88px;
+  padding: 24px;
 }
 @media (min-width: 3200px) and (orientation: landscape) {
-  header {
-    margin: 0 4rem;
-    padding: 2rem 0;
-    height: 12.5rem;
+  .main header {
+    width: 3200px;
   }
 }
-header img {
-  height: 1.5rem;
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  header img {
-    height: 2rem;
+@media (max-width: 1044px) and (orientation: portrait) {
+  .main header {
+    height: 68px;
+    padding: 16px;
   }
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  header img {
-    height: 3rem;
-  }
+.main header img {
+  height: 2rem;
 }
-@media (min-width: 3200px) and (orientation: landscape) {
-  header img {
-    height: 4rem;
-  }
-}
-header nav {
+.main header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
 }
-header nav i img {
-  height: 1.125rem;
-  width: 1.125rem;
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  header nav i img {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  header nav i img {
-    height: 2.25rem;
-    width: 2.25rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  header nav i img {
-    height: 3rem;
-    width: 3rem;
-  }
-}
-header nav .switch {
-  margin-left: 0.5625rem;
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  header nav .switch {
-    margin-left: 0.75rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  header nav .switch {
-    margin-left: 1.125rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  header nav .switch {
-    margin-left: 1.5rem;
-  }
-}
-header nav .switch i img {
+.main header nav i img {
   height: 1.5rem;
   width: 1.5rem;
 }
-@media (min-width: 1640px) and (orientation: landscape) {
-  header nav .switch i img {
-    height: 2rem;
-    width: 2rem;
-  }
+.main header nav .switch {
+  margin-left: 0.75rem;
 }
-@media (min-width: 2240px) and (orientation: landscape) {
-  header nav .switch i img {
-    height: 3rem;
-    width: 3rem;
-  }
+.main header nav .switch i img {
+  height: 2rem;
+  width: 2rem;
 }
-@media (min-width: 3200px) and (orientation: landscape) {
-  header nav .switch i img {
-    height: 4rem;
-    width: 4rem;
-  }
+.main header nav .switch i:first-child img {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 0.2rem;
 }
-header nav .switch i:first-child img {
-  height: 1.2rem;
-  width: 1.2rem;
-  margin: 0.15rem;
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  header nav .switch i:first-child img {
-    height: 1.6rem;
-    width: 1.6rem;
-    margin: 0.2rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  header nav .switch i:first-child img {
-    height: 2.4rem;
-    width: 2.4rem;
-    margin: 0.3rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  header nav .switch i:first-child img {
-    height: 3.2rem;
-    width: 3.2rem;
-    margin: 0.4rem;
-  }
-}
-header nav .switch:hover {
+.main header nav .switch:hover {
   cursor: pointer;
 }
 
 .menu {
+  z-index: 2;
   align-self: baseline;
   background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
   width: 13rem;
   position: absolute;
-  right: 80px;
-  top: 25px;
+  right: 95px;
+  top: 30px;
   border-radius: 0.4rem;
   transform: translateY(0px);
   transition: 0.3s;
@@ -159,25 +69,26 @@ header nav .switch:hover {
 @media (min-width: 1640px) and (orientation: landscape) {
   .menu {
     width: 14.625rem;
-    right: 105px;
-    top: 35px;
     border-radius: 0.45rem;
   }
 }
 @media (min-width: 2240px) and (orientation: landscape) {
   .menu {
     width: 22.75rem;
-    right: 155px;
-    top: 55px;
     border-radius: 0.7rem;
   }
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   .menu {
+    right: calc((100vw - 3200px) / 2 + 95px);
     width: 30.875rem;
-    right: 210px;
-    top: 65px;
     border-radius: 0.95rem;
+  }
+}
+@media (max-width: 1044px) and (orientation: portrait) {
+  .menu {
+    right: 90px;
+    top: 20px;
   }
 }
 .menu ul {
@@ -334,6 +245,7 @@ body.dark .menu hr {
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   .background div {
+    left: calc((100vw - 3200px) / 2);
     top: 900px;
   }
   .background div img {
@@ -357,6 +269,8 @@ body.dark .menu hr {
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   .background2 div {
+    left: auto;
+    right: calc((100vw - 3200px) / 2);
     top: 250px;
   }
 }
@@ -366,21 +280,11 @@ main {
   align-items: center;
   justify-content: space-between;
   margin: 0 10%;
-  min-height: calc(100vh - 4.6875rem);
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  main {
-    min-height: calc(100vh - 6.25rem);
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  main {
-    min-height: calc(100vh - 9.375rem);
-  }
+  min-height: calc(100vh - 88px);
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   main {
-    min-height: calc(100vh - 12.5rem);
+    width: 2700px;
   }
 }
 main .articleLeft {
@@ -623,24 +527,24 @@ main .articleRight {
   }
 }
 main .articleRight img {
-  width: 360px;
+  width: 310px;
   margin-bottom: 1.5rem;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   main .articleRight img {
-    width: 560px;
+    width: 475px;
     margin-bottom: 1.75rem;
   }
 }
 @media (min-width: 2240px) and (orientation: landscape) {
   main .articleRight img {
-    width: 720px;
+    width: 610px;
     margin-bottom: 2.75rem;
   }
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   main .articleRight img {
-    width: 920px;
+    width: 780px;
     margin-bottom: 3.5rem;
   }
 }
@@ -1487,43 +1391,62 @@ body.dark .cardSocial:last-child p {
 }
 
 footer {
-  display: flex;
-  background: linear-gradient(276.53deg, rgba(255, 255, 255, 0.5) -3.61%, rgba(255, 255, 255, 0) 62.8%), linear-gradient(87.46deg, #9BD9F2 -4.05%, #FFD78A 165.55%);
   margin-top: 100px;
-  padding: 1.125rem;
+  background: linear-gradient(276.53deg, rgba(255, 255, 255, 0.5) -3.61%, rgba(255, 255, 255, 0) 62.8%), linear-gradient(87.46deg, #9BD9F2 -4.05%, #FFD78A 165.55%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   footer {
     margin-top: 125px;
-    padding: 1.25rem;
   }
 }
 @media (min-width: 2240px) and (orientation: landscape) {
   footer {
     margin-top: 200px;
-    padding: 2rem;
   }
 }
 @media (min-width: 3200px) and (orientation: landscape) {
   footer {
     margin-top: 300px;
+  }
+}
+footer .footer {
+  width: 100%;
+  display: flex;
+  padding: 1.125rem;
+}
+@media (min-width: 1640px) and (orientation: landscape) {
+  footer .footer {
+    padding: 1.25rem;
+  }
+}
+@media (min-width: 2240px) and (orientation: landscape) {
+  footer .footer {
+    padding: 2rem;
+  }
+}
+@media (min-width: 3200px) and (orientation: landscape) {
+  footer .footer {
     padding: 2.625rem;
+    width: 3200px;
   }
 }
 @media (max-width: 1499px) and (orientation: landscape) {
-  footer {
+  footer .footer {
     flex-direction: column;
   }
 }
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px) {
-  footer {
+  footer .footer {
     flex-direction: column;
     padding: 0% 1.125rem;
     align-items: center;
   }
 }
 @media (max-width: 1044px) and (orientation: portrait) {
-  footer {
+  footer .footer {
     flex-direction: column;
     padding: 0% 1.125rem;
     align-items: center;
@@ -1851,7 +1774,7 @@ footer .icons i {
   transition: 0.15s;
 }
 footer .icons i:hover {
-  cursor: pointer;
+  scale: 1.1;
 }
 footer .icons img {
   height: 1.5rem;

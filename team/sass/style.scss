@@ -2,6 +2,7 @@
 @use "./header" as header;
 @use "./menudrop" as menu;
 @use "./mainpage" as main;
+@use "./background" as background;
 @use "./maincard" as cards;
 @use "./footer" as footer;
 
@@ -16,6 +17,7 @@
 :root {
     font-family: 'Nunito Sans', sans-serif;
 }
+
 
 body{
     width: 100%;
