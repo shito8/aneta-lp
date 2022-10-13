@@ -28,6 +28,12 @@ div{
     justify-content: center;
     img {
         width: 360px;
+        @media (min-width: 2240px) and (orientation: landscape){
+            width: 550px;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: 825px;
+        }   
         @media (max-width: 1640px) and (orientation: landscape){
             width: 320px;
           }
@@ -46,6 +52,14 @@ div{
         font-size: 2rem;
         margin-top: 2rem;
         text-align: center;
+        @media (min-width: 2240px) and (orientation: landscape){
+            font-size: 3rem;
+            margin-top: 3rem;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            font-size: 4.5rem;
+            margin-top: 4.5rem;
+        }   
         @media (max-width: 1640px) and (orientation: landscape){
             font-size: 1.5rem;
             margin-top: 1.5rem;
@@ -61,6 +75,16 @@ div{
       margin-top: 1.25rem;
       margin-bottom: 2.5rem;
       text-align: center;
+      @media (min-width: 2240px) and (orientation: landscape){
+        font-size: 2rem;  
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    @media (min-width: 3200px) and (orientation: landscape){
+        font-size: 3rem;  
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }  
       @media (max-width: 1640px) and (orientation: landscape){
         font-size: 1rem;  
         margin-top: 1rem;
@@ -92,6 +116,20 @@ div{
             color: #FFFFFF;
             text-align: center;
         }
+        @media (min-width: 2240px) and (orientation: landscape){
+            width: 420px;
+            border-radius: 20px;
+            a{
+                font-size: 2.25rem;
+            }
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            width: 630px;
+            border-radius: 30px;
+            a{
+                font-size: 3.5rem;
+            }
+        }  
         @media (max-width: 1640px) and (orientation: landscape){
             width: 250px;
             border-radius: 12px;
