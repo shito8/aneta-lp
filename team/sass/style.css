@@ -91,24 +91,6 @@
     top: 20px;
   }
 }
-.menu ul {
-  padding-top: 0.75rem;
-}
-@media (min-width: 1640px) and (orientation: landscape) {
-  .menu ul {
-    padding-top: 0.84375rem;
-  }
-}
-@media (min-width: 2240px) and (orientation: landscape) {
-  .menu ul {
-    padding-top: 1.3125rem;
-  }
-}
-@media (min-width: 3200px) and (orientation: landscape) {
-  .menu ul {
-    padding-top: 1.78125rem;
-  }
-}
 .menu li {
   font-weight: 700;
   font-size: 1rem;
