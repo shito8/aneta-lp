@@ -42,7 +42,18 @@ $dark-hover: #FFD78A;
         right: 90px;
         top: 20px;
     }
-
+    ul {
+        padding: $font-p-std*.3 0;
+        @media (min-width: 1640px) and (orientation: landscape){
+            padding: $font-p-hd*.3 0;
+        }
+        @media (min-width: 2240px) and (orientation: landscape){
+            padding: $font-p-2k*.3 0;
+        }
+        @media (min-width: 3200px) and (orientation: landscape){
+            padding: $font-p-4k*.3 0;
+        }
+    }
     li{
         font-weight: fonts.$font-weight-bold;
         font-size: $font-p-std;
