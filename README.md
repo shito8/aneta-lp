@@ -1,1 +1,2 @@
-# aneta-lp
+# anetabtc_landing
+AnetaBTC Landing
