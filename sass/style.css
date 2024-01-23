@@ -27,15 +27,94 @@
 .main header img {
   height: 2rem;
 }
+@media (max-width: 500px) {
+  .main header img.large {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  .main header img.mobile {
+    display: none;
+  }
+}
 .main header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
 }
+.main header nav .buttonLaunch .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(92deg, #72C4FF -2.99%, #7CA9FF 112.97%);
+  border: 2px solid #005FCC;
+  font-weight: 600;
+  color: #FFFFFF;
+  transition: 0.25s;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 180px;
+  height: 40px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 16px;
+}
+.main header nav .buttonLaunch .btn:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+@media (max-width: 768px) {
+  .main header nav .buttonLaunch .claim {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .main header nav .buttonLaunch .btn {
+    font-size: 16px;
+    width: 130px;
+    height: 35px;
+  }
+}
 .main header nav i img {
   height: 1.5rem;
   width: 1.5rem;
+}
+.main header nav #menu {
+  z-index: 5;
+}
+.main header nav #menu button {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: transparent;
+  gap: 5px;
+}
+.main header nav #menu button div {
+  background: black;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.75s;
+  transform-origin: left;
+}
+.main header nav #menu button:hover {
+  cursor: pointer;
+}
+.main header nav #menu button.close div {
+  height: 2px;
+}
+.main header nav #menu button.close div:first-child {
+  transform: rotate(45deg);
+  width: 20px;
+}
+.main header nav #menu button.close div:nth-child(2) {
+  opacity: 0;
+}
+.main header nav #menu button.close div:last-child {
+  transform: rotate(-45deg);
+  width: 20px;
 }
 .main header nav .switch {
   margin-left: 0.75rem;
@@ -53,14 +132,18 @@
   cursor: pointer;
 }
 
+body.dark .main #menu button div {
+  background: white;
+}
+
 .menu {
   z-index: 2;
   align-self: baseline;
   background: linear-gradient(253.36deg, #BDE6F7 -18.33%, #C8DED4 100.44%, #C2D9C9 100.44%);
   width: 13rem;
   position: absolute;
-  right: 95px;
-  top: 30px;
+  right: 65px;
+  top: 20px;
   border-radius: 0.4rem;
   transform: translateY(0px);
   transition: 0.3s;
@@ -74,13 +157,13 @@
 }
 @media (min-width: 2000px) and (orientation: landscape) {
   .menu {
-    right: calc((100vw - 2000px) / 2 + 95px);
+    right: calc((100vw - 2000px) / 2 + 65px);
   }
 }
 @media (max-width: 1044px) and (orientation: portrait) {
   .menu {
-    right: 90px;
-    top: 20px;
+    right: 60px;
+    top: 10px;
   }
 }
 .menu ul {
@@ -239,11 +322,11 @@ main .articleLeft .articleLeft div {
 }
 main .articleLeft h2 {
   background: linear-gradient(91.66deg, #06496E -51.95%, #4D849C 34.89%, #354998 129.28%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
   font-weight: 800;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
   font-size: 3.5rem;
   line-height: 4.2rem;
@@ -277,6 +360,7 @@ main .articleLeft h2 {
 }
 main .articleLeft h1 {
   background: linear-gradient(180deg, #000000 0%, #014469 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -311,6 +395,9 @@ main .articleLeft .buttons {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 1.125rem;
+  /*       .button2 {
+          background: linear-gradient(94.47deg, #06496E -16.48%, #4698C7 106.04%);
+        } */
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   main .articleLeft .buttons {
@@ -329,6 +416,13 @@ main .articleLeft .buttons {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  main .articleLeft .buttons {
+    max-width: 400px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 600px) and (orientation: portrait) {
   main .articleLeft .buttons {
     flex-direction: column;
@@ -339,10 +433,11 @@ main .articleLeft .buttons .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(94.47deg, #45B4BB -16.48%, #4698C7 106.04%);
+  gap: 3px;
+  background: linear-gradient(92deg, #72C4FF -2.99%, #7CA9FF 112.97%);
   font-weight: 600;
   color: #ffffff;
-  border: none;
+  border: 2px solid #005FCC;
   transition: 0.25s;
   font-size: 1.125rem;
   border-radius: 0.675rem;
@@ -353,6 +448,9 @@ main .articleLeft .buttons .button {
 main .articleLeft .buttons .button:hover {
   cursor: pointer;
   scale: 1.1;
+}
+main .articleLeft .buttons .button .cbtc-logo {
+  margin-left: 5px;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   main .articleLeft .buttons .button {
@@ -380,9 +478,18 @@ main .articleLeft .buttons .button:hover {
     height: 2.2rem;
     box-shadow: 0px 0px 0.25rem 0px rgba(0, 0, 0, 0.25);
   }
+  main .articleLeft .buttons .button .cbtc-logo {
+    width: 20px;
+    height: 20px;
+  }
 }
-main .articleLeft .buttons .button2 {
-  background: linear-gradient(94.47deg, #06496E -16.48%, #4698C7 106.04%);
+main .articleLeft .buttons .claim {
+  display: none;
+}
+@media (max-width: 768px) {
+  main .articleLeft .buttons .claim {
+    display: flex;
+  }
 }
 main .articleRight {
   display: flex;
@@ -451,7 +558,6 @@ body.dark .buttons .button2 {
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -508,7 +614,6 @@ body.dark .buttons .button2 {
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -560,7 +665,6 @@ body.dark .buttons .button2 {
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
-  -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -1378,18 +1482,6 @@ body.dark .sunMode {
 }
 body.dark .darkMode {
   display: inline;
-}
-
-@-webkit-keyframes change {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 @keyframes change {
   0% {

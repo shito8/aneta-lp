@@ -24,24 +24,25 @@ main{
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: $font-h1-std*1.6;
-        width: 800px;
+        max-width: 1000px;
         height: $font-h1-std*2;
+        width: 90%;
         h1 {
             font-size: $font-h1-std;
             font-weight: fonts.$font-weight-regular;
         }
         @media (max-width: 900px) {
-            width: 600px;
+            max-width: 600px;
         }
         @media (max-width: 660px) {
-            width: 90%;
             h1 {
                 font-size: $font-h1-min;
             }
         }
     }
     div:last-child{
-        width: 800px;
+        max-width: 1000px;
+        width: 90%;
         margin-bottom: $font-h1-std*1.28;
         h2{
             font-size: $font-h2-std;
@@ -52,10 +53,10 @@ main{
         p{
             font-weight: fonts.$font-weight-regular;
             font-size: $font-p-std;
-            text-align: justify;
+            text-align: center;
         }
         @media (max-width: 900px) {
-            width: 600px;
+            max-width: 600px;
         }
         @media (max-width: 660px) {
             width: 85%;

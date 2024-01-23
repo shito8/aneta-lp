@@ -56,8 +56,9 @@ main .title {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 3.6rem;
-  width: 800px;
+  max-width: 1000px;
   height: 4.5rem;
+  width: 90%;
 }
 main .title h1 {
   font-size: 2.25rem;
@@ -65,19 +66,17 @@ main .title h1 {
 }
 @media (max-width: 900px) {
   main .title {
-    width: 600px;
+    max-width: 600px;
   }
 }
 @media (max-width: 660px) {
-  main .title {
-    width: 90%;
-  }
   main .title h1 {
     font-size: 1.25rem;
   }
 }
 main div:last-child {
-  width: 800px;
+  max-width: 1000px;
+  width: 90%;
   margin-bottom: 2.88rem;
 }
 main div:last-child h2 {
@@ -89,11 +88,11 @@ main div:last-child h2 {
 main div:last-child p {
   font-weight: 400;
   font-size: 1.125rem;
-  text-align: justify;
+  text-align: center;
 }
 @media (max-width: 900px) {
   main div:last-child {
-    width: 600px;
+    max-width: 600px;
   }
 }
 @media (max-width: 660px) {
@@ -125,19 +124,13 @@ section .group__cards {
   }
 }
 section .group__cards .cards {
-  width: 850px;
+  width: 500px;
   color: #FFFFFF;
-  background-color: #232323;
-  border: #666666 solid 2px;
+  background: rgba(0, 0, 0, 0.46);
   border-radius: 20px;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
-@media (max-width: 900px) {
-  section .group__cards .cards {
-    width: 520px;
-  }
-}
-@media (max-width: 660px) {
+@media (max-width: 560px) {
   section .group__cards .cards {
     width: 90%;
     padding: 1.1rem;
@@ -148,28 +141,24 @@ section .group__cards .cards header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 section .group__cards .cards header h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
 }
 section .group__cards .cards header p {
-  font-size: 1.125rem;
-  font-weight: 400;
-  width: 90%;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 85%;
   text-align: center;
-  color: #E8F4FD;
-  line-height: 1.6875rem;
-}
-section .group__cards .cards header p:last-child {
-  width: 55%;
-  color: #BADEFF;
-}
-@media (max-width: 900px) {
-  section .group__cards .cards header p:last-child {
-    width: 70%;
-  }
+  color: #FFFFFF;
+  line-height: 1.5rem;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 660px) {
   section .group__cards .cards header h2 {
@@ -179,26 +168,22 @@ section .group__cards .cards header p:last-child {
   section .group__cards .cards header p {
     font-size: 1rem;
     line-height: 1.5rem;
-    width: 75%;
-  }
-  section .group__cards .cards header p:last-child {
-    width: 85%;
-    margin-top: 1.5rem;
+    width: 90%;
   }
 }
 section .group__cards .cards article .subtitle {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 0.625rem;
-  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
 }
 section .group__cards .cards article .subtitle h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 section .group__cards .cards article .subtitle img {
-  height: 1.625rem;
+  height: 1.3rem;
   margin: auto;
 }
 @media (max-width: 660px) {
@@ -214,10 +199,10 @@ section .group__cards .cards article .subtitle img {
   }
 }
 section .group__cards .cards article h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.4375rem;
   font-weight: 400;
-  line-height: 1.2rem;
+  line-height: 1.05rem;
 }
 section .group__cards .cards article h4 span {
   font-weight: 600;
@@ -231,11 +216,13 @@ section .group__cards .cards article .direction {
   padding: 0 0.75rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
 }
 section .group__cards .cards article .direction p {
   font-size: 0.75rem;
   line-height: 1.125rem;
+  line-break: anywhere;
+  width: 95%;
 }
 section .group__cards .cards article .direction img {
   height: 0.75rem;
@@ -249,7 +236,6 @@ section .group__cards .cards article .direction p:hover, section .group__cards .
   }
   section .group__cards .cards article .direction p {
     width: 90%;
-    line-break: anywhere;
   }
   section .group__cards .cards article .direction img {
     height: 1.5rem;
@@ -270,36 +256,27 @@ section .group__cards .cards article .vote {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  border: #909090 2px solid;
-  width: 30%;
+  height: 1.75rem;
+  border: #909090 1px solid;
+  width: 100%;
+  max-width: 240px;
   border-radius: 8px;
 }
 section .group__cards .cards article .vote h4 {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 0;
 }
 section .group__cards .cards article .vote h4 p {
   margin-left: 5px;
 }
-@media (max-width: 900px) {
-  section .group__cards .cards article .vote {
-    width: 50%;
-  }
-}
-@media (max-width: 660px) {
-  section .group__cards .cards article .vote {
-    width: 100%;
-  }
-}
 section .group__cards .cards #copy {
   position: absolute;
   justify-content: center;
   align-items: center;
-  bottom: 60px;
-  left: 690px;
+  top: -35px;
+  left: calc(100% - 100px);
   background-color: rgba(255, 255, 255, 0.1);
   width: 100px;
   height: 25px;
@@ -307,16 +284,9 @@ section .group__cards .cards #copy {
   transition: 0.5s;
   display: none;
 }
-@media (max-width: 900px) {
-  section .group__cards .cards #copy {
-    left: 340px;
-    bottom: 70px;
-  }
-}
 @media (max-width: 660px) {
   section .group__cards .cards #copy {
-    left: 155px;
-    bottom: 70px;
+    left: calc(100% - 80px);
     width: 80px;
   }
 }
@@ -325,8 +295,7 @@ section .group__cards .cards #copy {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  -webkit-animation: loader 2s infinite ease-in-out;
-          animation: loader 2s infinite ease-in-out;
+  animation: loader 2s infinite ease-in-out;
 }
 
 .loader {
@@ -348,15 +317,6 @@ section .group__cards .cards #copy {
 }
 .loader::after {
   left: 20px;
-}
-
-@-webkit-keyframes loader {
-  0%, 80%, 100% {
-    box-shadow: 0 10px 0 -5px;
-  }
-  40% {
-    box-shadow: 0 10px 0 0;
-  }
 }
 
 @keyframes loader {

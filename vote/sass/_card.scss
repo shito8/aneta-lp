@@ -1,10 +1,10 @@
 @use "./fontweight" as fonts;
 
 $primary-color: #FFFFFF;
-$font-h2-std: 1.5rem;
-$font-h3-std: 1.25rem;
-$font-p-std: 1.125rem;
-$font-h4-std: 1rem;
+$font-h2-std: 1.25rem;
+$font-h3-std: 1rem;
+$font-p-std: 1rem;
+$font-h4-std: .875rem;
 $font-p-min: 0.75rem;
 
 $font-h2-min: 1.1rem;
@@ -24,16 +24,12 @@ section {
             gap: 30px;
         }
         .cards{
-            width: 850px;
+            width: 500px;
             color: $primary-color;
-            background-color: #232323;
-            border: #666666 solid 2px;
+            background: rgba(0, 0, 0, 0.46);
             border-radius: 20px;
             padding: $font-h2-std;
-            @media (max-width: 900px) {
-                width: 520px;
-            }
-            @media (max-width: 660px) {
+            @media (max-width: 560px) {
                 width: 90%;
                 padding: $font-h2-min;
             }
@@ -42,27 +38,23 @@ section {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                margin-bottom: 50px;
                 h2{
                     font-size: $font-h2-std;
-                    font-weight: fonts.$font-weight-semibold;
+                    font-weight: fonts.$font-weight-regular;
                     margin-bottom: $font-h2-std;
                 }
                 p{
                     font-size: $font-p-std;
-                    font-weight: fonts.$font-weight-regular;
-                    width: 90%;
+                    font-weight: fonts.$font-weight-semibold;
+                    width: 85%;
                     text-align: center;
-                    color: #E8F4FD;
+                    color: #FFFFFF;
                     line-height: $font-p-std*1.5;
-                }
-                p:last-child{
-                    width: 55%;
-                    color: #BADEFF;
-                }
-                @media (max-width: 900px) {
-                    p:last-child{
-                        width: 70%;
-                    }
+                    min-height: 72px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
                 @media (max-width: 660px) {
                     h2{
@@ -72,11 +64,7 @@ section {
                     p{
                         font-size: $font-p1-min;
                         line-height: $font-p1-min*1.5;
-                        width: 75%;
-                    }
-                    p:last-child{
-                        width: 85%;
-                        margin-top: $font-p1-min*1.5;
+                        width: 90%;
                     }
                 }
             }
@@ -108,7 +96,7 @@ section {
                 }
                 h4{
                     font-size: $font-h4-std;
-                    margin-bottom: $font-h4-std;
+                    margin-bottom: $font-h4-std/2;
                     font-weight: fonts.$font-weight-regular;
                     line-height: $font-h4-std*1.2;
                     span{
@@ -128,6 +116,8 @@ section {
                     p{
                         font-size: $font-p-min;
                         line-height: $font-p-min*1.5;
+                        line-break: anywhere;
+                        width: 95%;
                     }
                     img{
                         height: $font-p-min;
@@ -139,7 +129,6 @@ section {
                         height: $font-p-min*5;
                         p{
                             width: 90%;
-                            line-break: anywhere;
                         }
                         img{
                             height: $font-p-min*2;
@@ -160,8 +149,9 @@ section {
                     justify-content: center;
                     align-items: center;
                     height: $font-h4-std*2;
-                    border: #909090 2px solid;
-                    width: 30%;
+                    border: #909090 1px solid;
+                    width: 100%;
+                    max-width: 240px;
                     border-radius: 8px;
                     h4{
                         display: flex;
@@ -172,12 +162,6 @@ section {
                             margin-left: 5px;
                         }
                     }
-                    @media (max-width: 900px) {
-                        width: 50%;
-                    }
-                    @media (max-width: 660px) {
-                        width: 100%;
-                    }
                 }
             }
 
@@ -185,21 +169,16 @@ section {
                 position: absolute;
                 justify-content: center;
                 align-items: center;
-                bottom: 60px;
-                left: 690px;
+                top: -35px;
+                left: calc(100% - 100px);
                 background-color: rgba(255, 255, 255, 0.1);
                 width: 100px;
                 height: 25px;
                 border-radius: 25px;
                 transition: 0.5s;
                 display: none;
-                @media (max-width: 900px) {
-                    left: 340px;
-                    bottom: 70px;
-                }
                 @media (max-width: 660px) {
-                    left: 155px;
-                    bottom: 70px;
+                    left: calc(100% - 80px);
                     width: 80px;
                 }
             }
